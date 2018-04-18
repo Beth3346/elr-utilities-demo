@@ -1,12 +1,15 @@
 .logo {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.navigation-main {
+.navigation-inner {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 0;
 }
 
 .main-menu {
@@ -16,5 +19,19 @@
 
 .main-menu li {
   display: block;
-  padding: 0 10px;
+  padding: 0 5px;
+}
+
+.main-menu a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 3px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.main-menu a:hover {
+  color: #fff;
+  background-color: #1976d2;
 }
