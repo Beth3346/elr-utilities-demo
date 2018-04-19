@@ -1,44 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import SidebarMenu from './SidebarMenu';
 
-class SidebarMain extends Component {
-  render() {
-    return (
-      <aside className="App-sidebar">
-        <ul className="sidebar-menu">
-          <li>
-            <a href="/">Animations</a>
-          </li>
-          <li>
-            <a href="/">Components</a>
-          </li>
-          <li>
-            <a href="/">CSS Helpers</a>
-          </li>
-          <li>
-            <a href="/">Elements</a>
-          </li>
-          <li>
-            <a href="/">Flex</a>
-          </li>
-          <li>
-            <a href="/">Forms</a>
-          </li>
-          <li>
-            <a href="/">Grid</a>
-          </li>
-          <li>
-            <a href="/">Navigation</a>
-          </li>
-          <li>
-            <a href="/">Sass Layout</a>
-          </li>
-          <li>
-            <a href="/">Typography</a>
-          </li>
-        </ul>
-      </aside>
-    );
-  }
-}
+const sidebarMain = () => {
+  return (
+    <aside className="App-sidebar">
+      <SidebarMenu />
+    </aside>
+  );
+};
 
-export default SidebarMain;
+export default sidebarMain;
