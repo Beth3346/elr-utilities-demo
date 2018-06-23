@@ -1,5 +1,5 @@
 import React from 'react';
-import SidebarMenu from '../SidebarMenu/SidebarMenu';
+import SidebarMenu from '@/components/SidebarMenu/SidebarMenu';
 
 const sidebarMain = () => (
   <aside className="App-sidebar">

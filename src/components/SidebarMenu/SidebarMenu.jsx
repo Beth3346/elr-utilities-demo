@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListItem from '../ListItem/ListItem';
+import ListItem from '@/components/ListItem/ListItem';
 
 class SidebarMenu extends Component {
   constructor(props) {
