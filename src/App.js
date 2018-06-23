@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import NavigationMain from '../components/NavigationMain';
-import SidebarMain from '../components/SidebarMain';
-import ContentHome from '../components/ContentHome';
+import Header from './components/Header/Header';
+import NavigationMain from './components/NavigationMain/NavigationMain';
+import SidebarMain from './components/SidebarMain/SidebarMain';
+import ContentHome from './components/ContentHome/ContentHome';
 import './App.css';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
