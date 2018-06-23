@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavigationMain.css';
+import './MainMenu.css';
 
 const mainMenu = () => (
   <ul className="main-menu">

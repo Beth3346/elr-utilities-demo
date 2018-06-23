@@ -1,5 +1,5 @@
 import React from 'react';
-import MainMenu from './MainMenu';
+import MainMenu from '../MainMenu/MainMenu';
 import './NavigationMain.css';
 
 const navigationMain = () => (
