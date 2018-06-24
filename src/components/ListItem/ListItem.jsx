@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const listItem = props => (
-  <li>
-    <a onClick={props.onClick} href={props.item.url}>
-      {props.item.name}
-    </a>
-    {props.open &&
-      props.item.subLinks &&
-      props.item.subLinks.length > 0 && (
-        <ul>
-          {props.item.subLinks.map(child => (
-            <li key={child.id}>
-              <a href={child.url}>{child.name}</a>
-            </li>
-          ))}
-        </ul>
-      )}
-  </li>
-);
+class ListItem extends Component {
+  clickHandler = (e, id) => {
+    this.props.onClick(e, id);
+  };
 
-export default listItem;
+  render() {
+    return (
+      <li>
+        <a
+          onClick={e => this.clickHandler(e, this.props.item.id)}
+          href={this.props.item.url}
+        >
+          {this.props.item.name}
+        </a>
+        {this.props.item.open &&
+          this.props.item.subLinks &&
+          this.props.item.subLinks.length > 0 && (
+            <ul>
+              {this.props.item.subLinks.map(child => (
+                <li key={child.id}>
+                  <a href={child.url}>{child.name}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+      </li>
+    );
+  }
+}
+
+export default ListItem;
