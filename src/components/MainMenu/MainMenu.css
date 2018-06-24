@@ -17,7 +17,8 @@
   transition: color 0.3s, background-color 0.3s;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,
+.main-menu a.active {
   color: #fff;
   background-color: #1976d2;
 }

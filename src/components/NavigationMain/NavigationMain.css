@@ -3,6 +3,10 @@
   font-weight: 900;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .navigation-inner {
   max-width: 1200px;
   margin: auto;

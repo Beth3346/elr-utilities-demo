@@ -2,13 +2,13 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 
-const CSS = () => (
+const ContactMe = () => (
   <div>
-    <Header heading="CSS">Some CSS Stuff</Header>
+    <Header heading="Contact Me">Some Contact Stuff</Header>
     <ContentMain>
-      <p>Some CSS Examples</p>
+      <p>Some Contact Examples</p>
     </ContentMain>
   </div>
 );
 
-export default CSS;
+export default ContactMe;
