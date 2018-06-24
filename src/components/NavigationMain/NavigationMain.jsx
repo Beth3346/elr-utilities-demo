@@ -2,7 +2,7 @@ import React from 'react';
 import MainMenu from '@/components/MainMenu/MainMenu';
 import './NavigationMain.css';
 
-const navigationMain = () => (
+const NavigationMain = () => (
   <nav className="navigation-main">
     <div className="navigation-inner">
       <p className="logo">ELR Utilities</p>
@@ -11,4 +11,4 @@ const navigationMain = () => (
   </nav>
 );
 
-export default navigationMain;
+export default NavigationMain;

@@ -33,7 +33,7 @@ class SidebarMenu extends Component {
             {
               id: 1,
               name: 'Content Block',
-              url: '/'
+              url: '/content'
             }
           ]
         },
