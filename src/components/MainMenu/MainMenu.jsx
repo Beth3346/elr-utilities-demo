@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainMenu.css';
 
-const mainMenu = () => (
+const MainMenu = () => (
   <ul className="main-menu">
     <li>
       <a href="/">CSS</a>
@@ -21,4 +21,4 @@ const mainMenu = () => (
   </ul>
 );
 
-export default mainMenu;
+export default MainMenu;

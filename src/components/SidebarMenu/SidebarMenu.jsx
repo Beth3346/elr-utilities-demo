@@ -70,7 +70,7 @@ class SidebarMenu extends Component {
         {
           id: 8,
           name: 'Grid',
-          url: '/',
+          url: '/grid',
           open: false
         },
         {
@@ -112,14 +112,20 @@ class SidebarMenu extends Component {
   render() {
     return (
       <ul className="sidebar-menu">
-        {this.state.items.map(item => (
-          <ListItem
-            onClick={(e, id) => this.showMenu(e, id)}
-            key={item.id}
-            item={item}
-            open={item.open}
-          />
-        ))}
+        {this.state.items.map(item => {
+          if (item.subLinks && item.subLinks.length) {
+            return (
+              <ListItem
+                onClick={(e, id) => this.showMenu(e, id)}
+                key={item.id}
+                item={item}
+                open={item.open}
+              />
+            );
+          } else {
+            return <ListItem key={item.id} item={item} open={item.open} />;
+          }
+        })}
       </ul>
     );
   }
