@@ -162,3 +162,63 @@ picture,
 section {
   display: block;
 }
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sidebar-menu {
+  padding: 20px 10px 20px 0;
+  list-style: none;
+}
+
+.sidebar-menu li {
+  padding: 5px 0;
+}
+
+.sidebar-menu > li > ul {
+  list-style: none;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-holder {
+  padding: 30px 60px 30px 90px;
+  max-width: 960px;
+}
+
+.content-holder p {
+  padding: 5px 0;
+  line-height: 1.5;
+}
+
+.example-heading {
+  font-size: 36px;
+  margin-bottom: 24px;
+  padding-top: 0;
+}
+
+.example-heading,
+.example-subheading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.example-subheading {
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 24px;
+  color: #1976d2;
+}

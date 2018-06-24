@@ -1,10 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './MainMenu.css';
 
 const MainMenu = () => (
   <ul className="main-menu">
     <li>
-      <a href="/">CSS</a>
+      <NavLink to="/">Home</NavLink>
+    </li>
+    <li>
+      <NavLink to="/css">CSS</NavLink>
     </li>
     <li>
       <a href="/">Sass</a>
