@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavigationMain from '@/components/NavigationMain/NavigationMain';
-import Home from '@/views/Home/Home';
-import CssPage from '@/views/CSS/CSS';
+import HomePage from '@/views/HomePage/HomePage';
+import CssExamples from '@/views/CssExamples/CssExamples';
+import SassExamples from '@/views/SassExamples/SassExamples';
+import AboutPage from '@/views/AboutPage/AboutPage';
+import ContactMe from '@/views/ContactMe/ContactMe';
 
 class App extends Component {
   render() {
@@ -10,8 +13,11 @@ class App extends Component {
       <div className="App">
         <NavigationMain />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/css" component={CssPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/css" component={CssExamples} />
+          <Route path="/sass" component={SassExamples} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactMe} />
         </Switch>
       </div>
     );

@@ -11,13 +11,13 @@ const MainMenu = () => (
       <NavLink to="/css">CSS</NavLink>
     </li>
     <li>
-      <a href="/">Sass</a>
+      <NavLink to="/sass">Sass</NavLink>
     </li>
     <li>
-      <a href="/">About</a>
+      <NavLink to="/about">About</NavLink>
     </li>
     <li>
-      <a href="/">Contact Me</a>
+      <NavLink to="/contact">Contact Me</NavLink>
     </li>
     <li>
       <a href="https://github.com/Beth3346">GitHub</a>
