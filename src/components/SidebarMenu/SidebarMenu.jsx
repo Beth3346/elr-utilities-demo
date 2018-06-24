@@ -5,7 +5,6 @@ class SidebarMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
       items: [
         {
           id: 1,
@@ -29,7 +28,14 @@ class SidebarMenu extends Component {
           id: 2,
           name: 'Blocks',
           url: '/',
-          open: false
+          open: false,
+          subLinks: [
+            {
+              id: 1,
+              name: 'Content Block',
+              url: '/'
+            }
+          ]
         },
         {
           id: 3,
@@ -89,21 +95,29 @@ class SidebarMenu extends Component {
     };
     this.showMenu = this.showMenu.bind(this);
   }
-  showMenu(e) {
+  showMenu(e, id) {
     e.preventDefault();
-    console.log('clicked');
+    const items = this.state.items.map(o => {
+      if (o.id === id) {
+        o.open = !o.open;
+      } else {
+        o.open = false;
+      }
 
-    this.setState(prevState => ({ open: !prevState.open }));
+      return o;
+    });
+
+    this.setState(items);
   }
   render() {
     return (
       <ul className="sidebar-menu">
         {this.state.items.map(item => (
           <ListItem
-            onClick={e => this.showMenu(e)}
+            onClick={(e, id) => this.showMenu(e, id)}
             key={item.id}
             item={item}
-            open={this.state.open}
+            open={item.open}
           />
         ))}
       </ul>
