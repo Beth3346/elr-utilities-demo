@@ -15,12 +15,12 @@ class SidebarMenu extends Component {
             {
               id: 1,
               name: 'Fade',
-              url: '/'
+              url: '/fade'
             },
             {
               id: 2,
               name: 'Flipper',
-              url: '/'
+              url: '/flipper'
             }
           ]
         },

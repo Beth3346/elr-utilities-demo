@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const ListItem = props => {
   const clickHandler = (e, id) => {
@@ -16,7 +17,7 @@ const ListItem = props => {
           <ul>
             {props.item.subLinks.map(child => (
               <li key={child.id}>
-                <a href={child.url}>{child.name}</a>
+                <NavLink to={child.url}>{child.name}</NavLink>
               </li>
             ))}
           </ul>

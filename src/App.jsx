@@ -6,6 +6,7 @@ import CssExamples from '@/views/CssExamples/CssExamples';
 import SassExamples from '@/views/SassExamples/SassExamples';
 import AboutPage from '@/views/AboutPage/AboutPage';
 import ContactMe from '@/views/ContactMe/ContactMe';
+import FadeExample from '@/views/FadeExample/FadeExample';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/sass" component={SassExamples} />
           <Route path="/about" component={AboutPage} />
           <Route path="/contact" component={ContactMe} />
+          <Route path="/fade" component={FadeExample} />
         </Switch>
       </div>
     );
