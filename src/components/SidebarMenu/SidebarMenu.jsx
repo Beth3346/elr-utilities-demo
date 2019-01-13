@@ -21,6 +21,21 @@ class SidebarMenu extends Component {
               id: 2,
               name: 'Flipper',
               url: '/flipper'
+            },
+            {
+              id: 3,
+              name: 'Animated Icons',
+              url: '/animated-icons'
+            },
+            {
+              id: 4,
+              name: 'Links',
+              url: '/links'
+            },
+            {
+              id: 5,
+              name: 'Slide',
+              url: '/slide'
             }
           ]
         },

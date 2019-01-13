@@ -7,6 +7,8 @@ import SassExamples from '@/views/SassExamples/SassExamples';
 import AboutPage from '@/views/AboutPage/AboutPage';
 import ContactMe from '@/views/ContactMe/ContactMe';
 import FadeExample from '@/views/FadeExample/FadeExample';
+import FlipperExample from '@/views/FlipperExample/FlipperExample';
+import AnimatedIconExample from '@/views/AnimatedIconExample/AnimatedIconExample';
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
           <Route path="/about" component={AboutPage} />
           <Route path="/contact" component={ContactMe} />
           <Route path="/fade" component={FadeExample} />
+          <Route path="/flipper" component={FlipperExample} />
+          <Route path="/animated-icons" component={AnimatedIconExample} />
         </Switch>
       </div>
     );
