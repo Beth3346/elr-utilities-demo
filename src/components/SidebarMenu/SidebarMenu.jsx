@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from '@/components/ListItem/ListItem';
+import './SidebarMenu.css';
 
 class SidebarMenu extends Component {
   constructor(props) {
@@ -29,8 +30,8 @@ class SidebarMenu extends Component {
             },
             {
               id: 4,
-              name: 'Links',
-              url: '/links'
+              name: 'Animated Links',
+              url: '/animated-links'
             },
             {
               id: 5,
@@ -43,12 +44,12 @@ class SidebarMenu extends Component {
           id: 2,
           name: 'Blocks',
           url: '/',
-          open: false,
+          open: true,
           subLinks: [
             {
               id: 1,
               name: 'Content Block',
-              url: '/content'
+              url: '/content-blocks'
             }
           ]
         },
@@ -56,55 +57,146 @@ class SidebarMenu extends Component {
           id: 3,
           name: 'Components',
           url: '/',
-          open: false
+          open: true,
+          subLinks: [
+            {
+              id: 1,
+              name: 'Cards',
+              url: '/cards'
+            },
+            {
+              id: 2,
+              name: 'Comments',
+              url: '/comments'
+            },
+            {
+              id: 3,
+              name: 'Labels',
+              url: '/labels'
+            },
+            {
+              id: 4,
+              name: 'Preloaders',
+              url: '/preloaders'
+            },
+            {
+              id: 5,
+              name: 'Pricing Tables',
+              url: '/pricing-tables'
+            },
+            {
+              id: 6,
+              name: 'Progress Meters',
+              url: '/progress-meters'
+            },
+            {
+              id: 7,
+              name: 'Steps',
+              url: '/steps'
+            },
+            {
+              id: 8,
+              name: 'Thumbnails',
+              url: '/thumbnails'
+            }
+          ]
         },
         {
           id: 4,
           name: 'CSS Helpers',
           url: '/',
-          open: false
+          open: true,
+          subLinks: [
+            {
+              id: 1,
+              name: 'Buttons',
+              url: '/buttons'
+            },
+            {
+              id: 2,
+              name: 'Headings',
+              url: '/headings'
+            },
+            {
+              id: 3,
+              name: 'Layout',
+              url: '/layout'
+            },
+            {
+              id: 4,
+              name: 'Lists',
+              url: '/lists'
+            },
+            {
+              id: 5,
+              name: 'Positioning',
+              url: '/positioning'
+            },
+            {
+              id: 6,
+              name: 'Reset',
+              url: '/reset'
+            },
+            {
+              id: 7,
+              name: 'Responsive',
+              url: '/responsive'
+            },
+            {
+              id: 8,
+              name: 'Typography',
+              url: '/typography'
+            }
+          ]
         },
         {
           id: 5,
           name: 'Elements',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 6,
           name: 'Flex',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 7,
           name: 'Forms',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 8,
           name: 'Grid',
           url: '/grid',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 9,
           name: 'Navigation',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 10,
           name: 'Sass Layout',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         },
         {
           id: 11,
           name: 'Typography',
           url: '/',
-          open: false
+          open: true,
+          subLinks: []
         }
       ]
     };
@@ -122,7 +214,7 @@ class SidebarMenu extends Component {
       return o;
     });
 
-    this.setState(items);
+    this.setState(() => ({ items }));
   }
   render() {
     return (
