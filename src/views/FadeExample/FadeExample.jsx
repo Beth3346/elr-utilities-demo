@@ -6,7 +6,7 @@ import './FadeExample.css';
 
 const FadeExample = () => (
   <div>
-    <Header heading="CSS">Fade Example</Header>
+    <Header heading="Fade">Fade Example</Header>
     <ContentMain>
       <section id="fade">
         <ExampleSection

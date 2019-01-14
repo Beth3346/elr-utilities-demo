@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './ListItem.css';
 
 const ListItem = props => {
   const clickHandler = (e, id) => {
@@ -7,7 +8,7 @@ const ListItem = props => {
   };
 
   return (
-    <li>
+    <li className="list-item">
       <a onClick={e => clickHandler(e, props.item.id)} href={props.item.url}>
         {props.item.name}
       </a>
