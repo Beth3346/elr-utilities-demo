@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Flipper.css';
+import './Flipper.scss';
 
 class Flipper extends Component {
   state = {

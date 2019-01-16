@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from '@/components/ListItem/ListItem';
-import './SidebarMenu.css';
+import './SidebarMenu.scss';
 
 class SidebarMenu extends Component {
   constructor(props) {

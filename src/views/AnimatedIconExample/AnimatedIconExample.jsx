@@ -3,7 +3,7 @@ import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
 import IconAnimated from '@/components/IconAnimated/IconAnimated';
-import IconCard from '@/components/IconCard/IconCard';
+import ContentCard from '@/components/ContentCard/ContentCard';
 
 const AnimatedIconExample = () => (
   <div>
@@ -49,15 +49,26 @@ const AnimatedIconExample = () => (
           heading="Animated Icon Card"
           subheading="Icons animate when moused over"
         >
-          <IconCard title="Content Title" buttonText="Button Text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              dapibus nisi eget enim vehicula, a rutrum nulla eleifend. Morbi et
-              ante vitae nunc tincidunt finibus ut eu lectus. Cras ut est urna.
-              Etiam sit amet tellus fermentum, eleifend ex ac, pharetra neque.
-              Nam fermentum sem sed ornare faucibus.
-            </p>
-          </IconCard>
+          <div className="card-holder">
+            <ContentCard
+              classes="elr-card elr-card-centered elr-card-border"
+              title="Content Title"
+              buttonText="Button Text"
+              icon={
+                <IconAnimated type="icon-border-pop">
+                  <i className="fa fa-home" />
+                </IconAnimated>
+              }
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                dapibus nisi eget enim vehicula, a rutrum nulla eleifend. Morbi
+                et ante vitae nunc tincidunt finibus ut eu lectus. Cras ut est
+                urna. Etiam sit amet tellus fermentum, eleifend ex ac, pharetra
+                neque. Nam fermentum sem sed ornare faucibus.
+              </p>
+            </ContentCard>
+          </div>
         </ExampleSection>
       </section>
     </ContentMain>

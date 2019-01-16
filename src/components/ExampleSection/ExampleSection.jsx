@@ -1,5 +1,5 @@
 import React from 'react';
-import './ExampleSection.css';
+import './ExampleSection.scss';
 
 const ExampleSection = ({ heading, subheading, children }) => (
   <div className="elr-container example-section">

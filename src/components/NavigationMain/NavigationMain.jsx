@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainMenu from '@/components/MainMenu/MainMenu';
-import './NavigationMain.css';
+import './NavigationMain.scss';
 
 const NavigationMain = () => (
   <nav className="navigation-main">

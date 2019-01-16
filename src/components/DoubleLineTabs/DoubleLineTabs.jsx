@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './DoubleLineTabs.css';
+import './DoubleLineTabs.scss';
 import TabItem from '@/components/TabItem/TabItem';
 
 class DoubleLineTabs extends Component {

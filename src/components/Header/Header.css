@@ -14,3 +14,8 @@
   font-size: 18px;
   padding: 10px 0;
 }
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+}

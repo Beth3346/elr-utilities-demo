@@ -1,0 +1,56 @@
+.example-heading {
+  font-size: 36px;
+  margin-bottom: 24px;
+  padding-top: 0;
+
+  + p:first-of-type {
+    margin-top: -20px;
+  }
+}
+
+.example-heading,
+.example-subheading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.example-subheading {
+  padding: 10px 0;
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.3125rem;
+  color: #1976d2;
+}
+
+.example-section {
+  padding-bottom: 5rem;
+}
+
+.example-headings {
+  margin-top: 0.625rem;
+
+  + .example-subheadings {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: #999;
+  }
+}
+
+.example-holder {
+  padding: 1.25rem 0;
+
+  .card-holder {
+    display: flex;
+    padding: 20px;
+
+    .elr-card {
+      margin-right: 20px;
+      margin-left: 20px;
+      max-width: 500px;
+    }
+  }
+}
