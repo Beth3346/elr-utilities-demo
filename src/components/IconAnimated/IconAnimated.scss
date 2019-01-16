@@ -1,0 +1,226 @@
+.icon-animated {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  margin: 1.25rem auto 1.875rem;
+  text-align: center;
+  background: rgba(100, 169, 237, 0.2);
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+
+  .fa {
+    font-size: 3rem;
+    line-height: 90px;
+    color: #1976d2;
+    transition: color 0.2s;
+  }
+}
+
+.icon-border {
+  transition: background 0.2s ease;
+
+  &::after {
+    top: -7px;
+    left: -7px;
+    padding: 0.4375rem;
+    box-shadow: 0 0 0 1px #1976d2;
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  &.active,
+  &:hover {
+    background-color: #1976d2;
+
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .fa {
+      color: #fff;
+    }
+  }
+}
+
+.icon-border-pop {
+  transition: background 0.2s ease;
+
+  &::after {
+    top: -7px;
+    left: -7px;
+    padding: 0.4375rem;
+    -webkit-box-shadow: 0 0 0 1px #1976d2;
+    box-shadow: 0 0 0 1px #1976d2;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    -o-transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  &.active,
+  &:hover {
+    background-color: #1976d2;
+
+    &::after {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .fa {
+      color: #fff;
+    }
+  }
+}
+
+.icon-dash {
+  -webkit-box-shadow: 0 0 0 0.1875rem #1976d2;
+  box-shadow: 0 0 0 0.1875rem #1976d2;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.icon-dash:after {
+  top: -0.1875rem;
+  left: -0.1875rem;
+  padding: 0;
+  z-index: 10;
+  border: 0.1875rem dashed #1976d2;
+}
+.icon-dash.active,
+.icon-dash:hover {
+  -webkit-box-shadow: 0 0 0 0 rgba(25, 118, 210, 0);
+  box-shadow: 0 0 0 0 rgba(25, 118, 210, 0);
+}
+.icon-dash-rotate {
+  -webkit-box-shadow: 0 0 0 0.1875rem #1976d2;
+  box-shadow: 0 0 0 0.1875rem #1976d2;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.icon-dash-rotate:after {
+  top: -0.1875rem;
+  left: -0.1875rem;
+  padding: 0;
+  z-index: 10;
+  border: 0.1875rem dashed #1976d2;
+}
+.icon-dash-rotate.active,
+.icon-dash-rotate:hover {
+  -webkit-box-shadow: 0 0 0 0 rgba(25, 118, 210, 0);
+  box-shadow: 0 0 0 0 rgba(25, 118, 210, 0);
+}
+.icon-dash-rotate.active:after,
+.icon-dash-rotate:hover:after {
+  -webkit-animation: spinAround 9s linear infinite;
+  animation: spinAround 9s linear infinite;
+}
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.icon-border-pull {
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 1px #1976d2;
+  box-shadow: 0 0 0 1px #1976d2;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  background-color: #fff;
+}
+.icon-border-pull .fa {
+  color: #fff;
+}
+.icon-border-pull::after {
+  top: -2px;
+  left: -2px;
+  padding: 0.125rem;
+  z-index: -1;
+  background: #1976d2;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  -o-transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+}
+.icon-border-pull.active::after,
+.icon-border-pull:hover::after {
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+}
+.icon-border-pull.active .fa,
+.icon-border-pull:hover .fa {
+  color: #fff;
+}
+.icon-background-fade {
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 1px #1976d2;
+  box-shadow: 0 0 0 1px #1976d2;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  background-color: #fff;
+}
+.icon-background-fade .fa {
+  color: #fff;
+}
+.icon-background-fade::after {
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  z-index: -1;
+  background: #1976d2;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  -o-transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+}
+.icon-background-fade.active::after,
+.icon-background-fade:hover::after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.4s;
+  transition: opacity 0.2s, -webkit-transform 0.4s;
+  -o-transition: transform 0.4s, opacity 0.2s;
+  transition: transform 0.4s, opacity 0.2s;
+  transition: transform 0.4s, opacity 0.2s, -webkit-transform 0.4s;
+}
+.icon-background-fade.active .fa,
+.icon-background-fade:hover .fa {
+  color: #1976d2;
+}

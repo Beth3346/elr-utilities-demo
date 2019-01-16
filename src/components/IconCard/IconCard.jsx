@@ -1,14 +1,13 @@
 import React from 'react';
-import './IconCard.css';
+import '../ContentCard/ContentCard.scss';
+// import './IconCard.scss';
 
-const IconCard = ({ children, title, buttonText }) => (
-  <div className="card-border card-centered icon-card">
+const IconCard = ({ children, title, buttonText, icon }) => (
+  <div className="elr-card-border elr-card-centered elr-icon-card">
     <div className="elr-card-header">
       <div className="elr-header-content">
-        <div className="icon-animated icon-border-pop">
-          <i className="fa fa-gift" />
-        </div>
-        <h3>{title}</h3>
+        {icon}
+        <h3 className="elr-card-title">{title}</h3>
       </div>
     </div>
     <div className="elr-card-body">

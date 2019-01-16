@@ -1,0 +1,44 @@
+.menu-drop-lines .menu {
+  a {
+    margin: 0 15px;
+    padding: 0.75em 0;
+    text-align: center;
+    position: relative;
+    color: #999;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #1976d2;
+    }
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 30%;
+      width: 40%;
+      height: 2px;
+      background: #1976d2;
+      content: '';
+      opacity: 0;
+      transition: height 0.3s, opacity 0.3s, transform 0.3s;
+      transform: translateY(-10px);
+    }
+
+    &:focus::after,
+    &:hover::after {
+      height: 2px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .menu-item.current a {
+    color: #1976d2;
+
+    &::after {
+      height: 2px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

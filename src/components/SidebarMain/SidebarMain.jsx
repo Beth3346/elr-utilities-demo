@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarMenu from '@/components/SidebarMenu/SidebarMenu';
-import './SidebarMain.css';
+import './SidebarMain.scss';
 
 const sidebarMain = () => (
   <aside className="sidebar-main">

@@ -1,0 +1,17 @@
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-holder {
+  padding: 30px 60px 30px 30px;
+  max-width: 960px;
+
+  p {
+    padding: 5px 0;
+    line-height: 1.5;
+  }
+}

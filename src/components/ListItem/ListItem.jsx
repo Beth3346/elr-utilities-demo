@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './ListItem.css';
+import './ListItem.scss';
 
 const ListItem = props => {
   const clickHandler = (e, id) => {

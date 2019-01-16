@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './MainMenu.css';
+import './MainMenu.scss';
 
 const MainMenu = () => (
   <ul className="main-menu">

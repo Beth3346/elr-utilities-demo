@@ -6,6 +6,7 @@ import './AnimatedLinkExample.css';
 import SimpleLineTabs from '@/components/SimpleLineTabs/SimpleLineTabs';
 import DoubleLineTabs from '@/components/DoubleLineTabs/DoubleLineTabs';
 import ExpandingLineMenu from '@/components/ExpandingLineMenu/ExpandingLineMenu';
+import DropLineMenu from '@/components/DropLineMenu/DropLineMenu';
 
 const AnimatedLinkExample = () => (
   <div>
@@ -64,6 +65,12 @@ const AnimatedLinkExample = () => (
           </div>
           <div className="elr-col-full example-holder">
             <ExpandingLineMenu />
+          </div>
+          <div className="elr-col-full">
+            <h4 className="example-subheading">Drop Line Menu</h4>
+          </div>
+          <div className="elr-col-full example-holder">
+            <DropLineMenu />
           </div>
         </ExampleSection>
       </section>

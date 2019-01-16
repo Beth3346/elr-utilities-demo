@@ -1,5 +1,6 @@
 import React from 'react';
 import SidebarMain from '@/components/SidebarMain/SidebarMain';
+import './ContentMain.scss';
 
 const ContentMain = props => (
   <main className="main-content">
