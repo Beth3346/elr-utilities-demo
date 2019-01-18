@@ -1,0 +1,64 @@
+.elr-label {
+  font-size: 0.75rem;
+  padding: 0.3125rem 0.9375rem;
+  display: inline-block;
+  font-weight: 900;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #333;
+  border-radius: 5px;
+  border-color: #333;
+  margin-bottom: 0.3125rem;
+  margin-right: 0.625rem;
+  max-height: 200px;
+  transition: opacity 0.3s, max-height 0s ease 0.4s;
+
+  &.fade {
+    opacity: 0;
+    max-height: 0;
+    display: none;
+  }
+
+  span {
+    margin-right: 0.3125rem;
+
+    &:first-child {
+      margin-right: 0.625rem;
+    }
+
+    &:last-child,
+    &:only-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.elr-label-close {
+  cursor: pointer;
+}
+
+.elr-label-info {
+  background-color: #1daaf0;
+  border-color: #1daaf0;
+}
+
+.elr-label-danger {
+  background-color: #f7322f;
+  border-color: #f7322f;
+}
+
+.elr-label-warning {
+  background-color: #d1cb34;
+  border-color: #d1cb34;
+}
+
+.elr-label-success {
+  background-color: #7aba7b;
+  border-color: #7aba7b;
+}
+
+.elr-label-muted {
+  background-color: #999;
+  border-color: #999;
+}
