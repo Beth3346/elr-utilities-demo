@@ -587,6 +587,21 @@ button {
   cursor: pointer;
 }
 
+.corner-label-box {
+  width: 15.625rem;
+  height: 15.625rem;
+  display: block;
+  background-color: #ccc;
+  position: relative;
+  float: left;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.corner-label-box:nth-child(3) {
+  clear: left;
+}
+
 .elr-button {
   padding: 0.625rem 1.25rem;
   font-size: 0.875rem;
@@ -6528,158 +6543,8 @@ button {
 .elr-generate-password {
   font-size: 0.875rem;
 }
-.label {
-  font-size: 0.75rem;
-  padding: 0.3125rem 0.9375rem;
-  display: inline-block;
-  font-weight: 900;
-  color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  background-color: #333;
-  border-radius: 5px;
-  border-color: #333;
-  margin-bottom: 0.3125rem;
-  margin-right: 0.625rem;
-}
-.label span {
-  margin-right: 0.3125rem;
-}
-.label span:first-child {
-  margin-right: 0.625rem;
-}
-.label span:last-child,
-.label span:only-child {
-  margin-right: 0;
-}
-.label .label-close {
-  cursor: pointer;
-}
-.label-info {
-  background-color: #1daaf0;
-  border-color: #1daaf0;
-}
-.label-danger {
-  background-color: #f7322f;
-  border-color: #f7322f;
-}
-.label-warning {
-  background-color: #d1cb34;
-  border-color: #d1cb34;
-}
-.label-success {
-  background-color: #7aba7b;
-  border-color: #7aba7b;
-}
-.label-muted {
-  background-color: #999;
-  border-color: #999;
-}
-.label-corner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-}
-.label-corner .label-triangle {
-  width: 0;
-  height: 0;
-  border-top: 30px solid #ed145b;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-left: 30px solid #ed145b;
-  text-align: center;
-}
-.label-corner .label-icon {
-  font-size: 0.875rem;
-  position: absolute;
-  color: #fff;
-  left: 0.625rem;
-  top: 0.625rem;
-}
-.label-corner-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-}
-.label-corner-right .label-triangle {
-  width: 0;
-  height: 0;
-  border-top: 30px solid #7aba7b;
-  border-right: 30px solid #7aba7b;
-  border-bottom: 30px solid transparent;
-  border-left: 30px solid transparent;
-  text-align: center;
-}
-.label-corner-right .label-icon {
-  font-size: 0.875rem;
-  position: absolute;
-  color: #fff;
-  right: 0.625rem;
-  top: 0.625rem;
-}
-.label-corner-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-}
-.label-corner-bottom .label-triangle {
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid #1976d2;
-  border-left: 30px solid #1976d2;
-  text-align: center;
-}
-.label-corner-bottom .label-icon {
-  font-size: 0.875rem;
-  position: absolute;
-  color: #fff;
-  left: 0.625rem;
-  bottom: 0.625rem;
-}
-.label-corner-bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-}
-.label-corner-bottom-right .label-triangle {
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-right: 30px solid #7aba7b;
-  border-bottom: 30px solid #7aba7b;
-  border-left: 30px solid transparent;
-  text-align: center;
-}
-.label-corner-bottom-right .label-icon {
-  font-size: 0.875rem;
-  position: absolute;
-  color: #fff;
-  right: 0.625rem;
-  bottom: 0.625rem;
-}
-.corner-label-box {
-  width: 15.625rem;
-  height: 15.625rem;
-  display: block;
-  background-color: #ccc;
-  position: relative;
-  float: left;
-  margin-right: 0.625rem;
-  margin-bottom: 0.625rem;
-}
-.corner-label-box:nth-child(3) {
-  clear: left;
-}
+
+
 .label-ribbon {
   color: #fff;
   background-color: #333;
@@ -8721,4 +8586,22 @@ button {
 .round-thumbnail img {
   height: 100%;
   width: auto;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
 }

@@ -13,9 +13,7 @@ const MediaBox = ({ buttonText, heading, image, children }) => {
         </div>
         <div className="elr-media-body">{children}</div>
         <div className="elr-media-footer">
-          <a href="#" className="elr-media-button">
-            {buttonText}
-          </a>
+          <a className="elr-media-button">{buttonText}</a>
         </div>
       </div>
     </div>

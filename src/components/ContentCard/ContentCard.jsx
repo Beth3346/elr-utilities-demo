@@ -16,7 +16,7 @@ const ContentCard = ({
       <div className="elr-header-content">
         {thumbnail && (
           <figure className="elr-card-thumbnail">
-            <img src={thumbnail} />
+            <img src={thumbnail} alt="" />
           </figure>
         )}
         {image && (
