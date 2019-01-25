@@ -71,31 +71,36 @@ class SidebarMenu extends Component {
             },
             {
               id: 3,
+              name: 'Data Patterns',
+              url: '/data-patterns'
+            },
+            {
+              id: 4,
               name: 'Labels',
               url: '/labels'
             },
             {
-              id: 4,
+              id: 5,
               name: 'Preloaders',
               url: '/preloaders'
             },
             {
-              id: 5,
+              id: 6,
               name: 'Pricing Tables',
               url: '/pricing-tables'
             },
             {
-              id: 6,
+              id: 7,
               name: 'Progress Meters',
               url: '/progress-meters'
             },
             {
-              id: 7,
+              id: 8,
               name: 'Steps',
               url: '/steps'
             },
             {
-              id: 8,
+              id: 9,
               name: 'Thumbnails',
               url: '/thumbnails'
             }

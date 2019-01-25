@@ -3,6 +3,24 @@
   padding: 0;
   margin: 0;
   border-color: #ed145b;
+
+  .elr-label-triangle {
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-style: solid;
+    border-top-color: inherit;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+    text-align: center;
+  }
+
+  .elr-label-icon {
+    font-size: 14px;
+    position: absolute;
+    color: #fff;
+  }
 }
 
 .elr-label-corner-top {
@@ -25,18 +43,6 @@
   right: 0;
 }
 
-.elr-label-triangle {
-  width: 0;
-  height: 0;
-  border-width: 30px;
-  border-style: solid;
-  border-top-color: inherit;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: inherit;
-  text-align: center;
-}
-
 .elr-label-corner-right .elr-label-triangle {
   border-top-color: inherit;
   border-right-color: inherit;
@@ -56,12 +62,6 @@
   border-right-color: inherit;
   border-bottom-color: inherit;
   border-left-color: transparent;
-}
-
-.elr-label-icon {
-  font-size: 14px;
-  position: absolute;
-  color: #fff;
 }
 
 .elr-label-corner-top .elr-label-icon {

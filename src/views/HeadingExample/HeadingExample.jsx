@@ -8,7 +8,7 @@ const HeadingExample = () => (
     <Header heading="Headings">Headings Example</Header>
     <ContentMain>
       <section id="headings">
-        <ExampleSection heading="" subheading="" />
+        <ExampleSection heading="Headings" subheading="" />
       </section>
     </ContentMain>
   </div>

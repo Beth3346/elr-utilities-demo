@@ -2,20 +2,17 @@ import React from 'react';
 import './CornerLabel.scss';
 
 const CornerLabel = ({ icon, position }) => {
-  let labelClass;
+  const classMap = {
+    topRight: 'elr-label-corner-right',
+    bottomLeft: 'elr-label-corner-bottom',
+    bottomRight: 'elr-label-corner-bottom-right',
+    topLeft: 'elr-label-corner-top'
+  };
 
-  if (position === 'topRight') {
-    labelClass = 'elr-label-corner elr-label-corner-right';
-  } else if (position === 'bottomLeft') {
-    labelClass = 'elr-label-corner elr-label-corner-bottom';
-  } else if (position === 'bottomRight') {
-    labelClass = 'elr-label-corner elr-label-corner-bottom-right';
-  } else {
-    labelClass = 'elr-label-corner elr-label-corner-top';
-  }
+  const labelClass = position ? classMap[position] : 'elr-label-corner-top';
 
   return (
-    <div className={labelClass}>
+    <div className={`elr-label-corner ${labelClass}`}>
       <div className="elr-label-triangle" />
       <span className="elr-label-icon">{icon}</span>
     </div>
