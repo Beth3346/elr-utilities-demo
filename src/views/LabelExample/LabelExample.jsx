@@ -4,6 +4,7 @@ import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
 import PillLabel from '@/components/PillLabel/PillLabel';
 import CornerLabel from '../../components/CornerLabel/CornerLabel';
+import RibbonLabel from '../../components/RibbonLabel/RibbonLabel';
 
 const LabelExample = () => (
   <div>
@@ -69,6 +70,11 @@ const LabelExample = () => (
               position="bottomRight"
               icon={<i className="fa fa-heart" />}
             />
+          </div>
+        </ExampleSection>
+        <ExampleSection heading="Ribbon Labels">
+          <div className="corner-label-box">
+            <RibbonLabel title="new article" />
           </div>
         </ExampleSection>
       </section>

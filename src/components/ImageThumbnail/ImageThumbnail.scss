@@ -1,0 +1,26 @@
+.elr-thumbnail {
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: #999 0 0 0 1px;
+  width: 150px;
+  height: 150px;
+  display: block;
+  text-align: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+  }
+}
+
+.elr-rounded-thumbnail {
+  border-radius: 5px;
+}
+
+.elr-round-thumbnail {
+  border-radius: 150px;
+}

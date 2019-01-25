@@ -9,7 +9,7 @@ const ButtonExample = () => (
     <Header heading="Buttons">Buttons Example</Header>
     <ContentMain>
       <section id="buttons">
-        <ExampleSection heading="" subheading="" />
+        <ExampleSection heading="Buttons" subheading="" />
       </section>
     </ContentMain>
   </div>

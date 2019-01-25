@@ -1,0 +1,126 @@
+@mixin elr-pricing-package($color) {
+  .elr-pricing-package {
+    background-color: $color;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+    max-width: 300px;
+    align-self: center;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: darken($color, 30%);
+    font-weight: 700;
+    flex: 1;
+  }
+
+  .elr-pricing-package-popular {
+    flex: 2;
+    max-width: none;
+    height: 115%;
+  }
+
+  .elr-pricing-package-body,
+  .elr-pricing-package-footer,
+  .elr-pricing-package-header {
+    width: 100%;
+  }
+
+  .elr-pricing-package-header {
+    padding: 20px;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .elr-pricing-package-price {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .elr-pricing-package-duration {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .elr-pricing-package-description,
+  .elr-pricing-package-name {
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .elr-pricing-package-name {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .elr-pricing-package-body {
+    border-width: 1px;
+    border-style: solid;
+    border-color: darken($color, 30%);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .elr-pricing-package-description {
+    font-size: 14px;
+  }
+
+  .elr-pricing-package-details {
+    padding: 20px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: inherit;
+    width: 100%;
+
+    span {
+      display: block;
+      line-height: 1.2;
+    }
+  }
+
+  .elr-pricing-package-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+
+    li {
+      padding: 0 0 5px;
+      margin: 0;
+      font-weight: 700;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .elr-pricing-package-footer {
+    padding: 20px 10px 10px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: darken($color, 30%);
+  }
+
+  .elr-pricing-package-footer .elr-button {
+    margin-right: 0;
+  }
+}
+
+@include elr-pricing-package(#92c2f2);

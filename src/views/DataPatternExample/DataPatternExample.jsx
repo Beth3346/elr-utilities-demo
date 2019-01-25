@@ -8,7 +8,7 @@ const DataPatternExample = () => (
     <Header heading="Data Patterns">Data Patterns Example</Header>
     <ContentMain>
       <section id="data-patterns">
-        <ExampleSection heading="" subheading="" />
+        <ExampleSection heading="Address" subheading="" />
       </section>
     </ContentMain>
   </div>
