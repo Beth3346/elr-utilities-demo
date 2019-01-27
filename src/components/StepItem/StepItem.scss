@@ -1,0 +1,77 @@
+.elr-step-icon {
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.elr-step-item {
+  text-align: center;
+  padding-left: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #ed145b;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+
+  &:nth-child(odd) {
+    background-color: #eee;
+    color: #ed145b;
+
+    &::after {
+      color: #eee;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: #ccc;
+    color: #ed145b;
+
+    &::after {
+      color: #ccc;
+    }
+  }
+
+  &:last-of-type::after {
+    display: none !important;
+  }
+
+  &.elr-step-item-complete,
+  &.elr-step-item-complete .elr-step-icon {
+    color: #00a86b;
+  }
+
+  &.elr-step-item-current {
+    background-color: #ed145b;
+    color: #fff;
+
+    &::after {
+      color: #ed145b;
+    }
+  }
+
+  &::after {
+    content: '';
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-width: 24px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+    top: 1px;
+    right: -48px;
+    z-index: 1;
+  }
+}

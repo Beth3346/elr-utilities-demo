@@ -2,27 +2,25 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './ListItem.scss';
 
-const ListItem = props => {
+const ListItem = ({ onClick, item }) => {
   const clickHandler = (e, id) => {
-    props.onClick(e, id);
+    onClick(e, id);
   };
 
   return (
     <li className="list-item">
-      <a onClick={e => clickHandler(e, props.item.id)} href={props.item.url}>
-        {props.item.name}
+      <a onClick={e => clickHandler(e, item.id)} href={item.url}>
+        {item.name}
       </a>
-      {props.item.open &&
-        props.item.subLinks &&
-        props.item.subLinks.length > 0 && (
-          <ul>
-            {props.item.subLinks.map(child => (
-              <li key={child.id}>
-                <NavLink to={child.url}>{child.name}</NavLink>
-              </li>
-            ))}
-          </ul>
-        )}
+      {item.open && item.subLinks && item.subLinks.length > 0 && (
+        <ul>
+          {item.subLinks.map(child => (
+            <li key={child.id}>
+              <NavLink to={child.url}>{child.name}</NavLink>
+            </li>
+          ))}
+        </ul>
+      )}
     </li>
   );
 };

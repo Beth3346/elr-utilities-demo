@@ -26,7 +26,7 @@ const Home = () => (
       </h3>
       <p>
         While I do still think that Sass and CSS Libraries are useful for
-        producivity I think that many of them will fall out of use in the
+        productivity I think that many of them will fall out of use in the
         future. JavaScript frameworks like React and Vue make it easier to
         create reusable, styled components. Using Sass with these frameworks can
         just create more trouble than it solves.
@@ -36,13 +36,13 @@ const Home = () => (
         all of my projects use the most modern, cutting edge JavaScript
         frameworks. Sometimes I just need to build a WordPress theme or a
         landing page quickly. This is where a mixin library can really help
-        producivity.
+        productivity.
       </p>
       <h3 className="example-subheading">Recent Updates to ELR Utilities</h3>
       <p>
         Recently I decided to break up ELR Sass Utilities into smaller modules.
         I noticed that I typically only used a small number of mixins in each
-        project so it really seemed uncessessary to include the entire libaray.
+        project so it really seemed unnecessary to include the entire library.
         All of these modules are available on npm. I have also added compiled
         CSS to each module for use in projects that don't use Scss.
       </p>
