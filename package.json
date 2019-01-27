@@ -54,9 +54,9 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "react-router-dom": "^4.2.2"
+    "jest-dom": "^3.0.1",
+    "react-router-dom": "^4.2.2",
+    "react-testing-library": "^5.4.4"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -4627,73 +4627,7 @@ pre {
     max-width: 100%;
   }
 }
-.elr-accordion {
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-  max-width: 50rem;
-}
-.elr-accordion .elr-accordion-content,
-.elr-accordion .elr-accordion-label {
-  background-color: #fff;
-  border: 1px solid #1976d2;
-  border-radius: 5px;
-}
-.elr-accordion .elr-accordion-label {
-  margin: 0 0 0.3125rem;
-  padding: 0.3125rem 0.625rem;
-  font-size: 1.125rem;
-  color: #333;
-  font-weight: 400;
-  position: relative;
-  padding-left: 1.875rem;
-}
-.elr-accordion .elr-accordion-label:hover {
-  cursor: pointer;
-}
-.elr-accordion .elr-accordion-label.active .elr-accordion-icon {
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-}
-.elr-accordion .elr-accordion-icon {
-  font-size: 0.875rem;
-  color: #00f;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  line-height: 1;
-  position: absolute;
-  left: 0.9375rem;
-  top: 0.5625rem;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-.elr-accordion .elr-accordion-content {
-  max-height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1),
-    visibility 0.2s;
-  -o-transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
-  transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
-  padding: 0;
-}
-.elr-accordion .elr-accordion-content.active {
-  max-height: 31.25rem;
-  visibility: visible;
-  -webkit-transition: max-height 0.5s ease-in;
-  -o-transition: max-height 0.5s ease-in;
-  transition: max-height 0.5s ease-in;
-}
-.elr-accordion .elr-accordion-content.active {
-  margin-bottom: 0.3125rem;
-}
-.elr-accordion .elr-accordion-inner {
-  padding: 0.625rem 1.25rem;
-}
+
 .elr-accordion-nav {
   background-color: #1976d2;
 }

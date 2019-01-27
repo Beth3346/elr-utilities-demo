@@ -29,6 +29,32 @@ import SlideExample from '@/views/SlideExample/SlideExample';
 import StepExample from '@/views/StepExample/StepExample';
 import ThumbnailExample from '@/views/ThumbnailExample/ThumbnailExample';
 import TypographyExample from '@/views/TypographyExample/TypographyExample';
+import AccordionExample from '@/views/AccordionExample/AccordionExample';
+import AlertExample from '@/views/AlertExample/AlertExample';
+import BreadcrumbsExample from '@/views/BreadcrumbsExample/BreadcrumbsExample';
+import DropdownNavExample from '@/views/DropdownNavExample/DropdownNavExample';
+import FlexHelpersExample from '@/views/FlexHelpersExample/FlexHelpersExample';
+import FormsExample from '@/views/FormsExample/FormsExample';
+import GridExample from '@/views/GridExample/GridExample';
+import ImagesExample from '@/views/ImagesExample/ImagesExample';
+import InputGroupsExample from '@/views/InputGroupsExample/InputGroupsExample';
+import InputsExample from '@/views/InputsExample/InputsExample';
+import LayoutUtilitiesExample from '@/views/LayoutUtilitiesExample/LayoutUtilitiesExample';
+import ListsExample from '@/views/ListsExample/ListsExample';
+import MetroGridExample from '@/views/MetroGridExample/MetroGridExample';
+import ModalExample from '@/views/ModalExample/ModalExample';
+import NavigationExample from '@/views/NavigationExample/NavigationExample';
+import NotificationExample from '@/views/NotificationExample/NotificationExample';
+import PaginationExample from '@/views/PaginationExample/PaginationExample';
+import PasswordsExample from '@/views/PasswordsExample/PasswordsExample';
+import PopoverExample from '@/views/PopoverExample/PopoverExample';
+import ShapesExample from '@/views/ShapesExample/ShapesExample';
+import StickyNavExample from '@/views/StickyNavExample/StickyNavExample';
+import StyledHeadingsExample from '@/views/StyledHeadingsExample/StyledHeadingsExample';
+import TablesExample from '@/views/TablesExample/TablesExample';
+import TextEffectsExample from '@/views/TextEffectsExample/TextEffectsExample';
+import TooltipExample from '@/views/TooltipExample/TooltipExample';
+import VideosExample from '@/views/VideosExample/VideosExample';
 
 class App extends Component {
   render() {
@@ -64,6 +90,32 @@ class App extends Component {
           <Route path="/steps" component={StepExample} />
           <Route path="/thumbnails" component={ThumbnailExample} />
           <Route path="/typography" component={TypographyExample} />
+          <Route path="/accordion" component={AccordionExample} />
+          <Route path="/alerts" component={AlertExample} />
+          <Route path="/breadcrumbs" component={BreadcrumbsExample} />
+          <Route path="/dropdown-nav" component={DropdownNavExample} />
+          <Route path="/flex-helpers" component={FlexHelpersExample} />
+          <Route path="/forms" component={FormsExample} />
+          <Route path="/grid" component={GridExample} />
+          <Route path="/images" component={ImagesExample} />
+          <Route path="/input-groups" component={InputGroupsExample} />
+          <Route path="/inputs" component={InputsExample} />
+          <Route path="/layout-utilities" component={LayoutUtilitiesExample} />
+          <Route path="/lists" component={ListsExample} />
+          <Route path="/metro-grid" component={MetroGridExample} />
+          <Route path="/modals" component={ModalExample} />
+          <Route path="/navigation" component={NavigationExample} />
+          <Route path="/notification" component={NotificationExample} />
+          <Route path="/pagination" component={PaginationExample} />
+          <Route path="/passwords" component={PasswordsExample} />
+          <Route path="/popovers" component={PopoverExample} />
+          <Route path="/shapes" component={ShapesExample} />
+          <Route path="/sticky-nav" component={StickyNavExample} />
+          <Route path="/styled-headings" component={StyledHeadingsExample} />
+          <Route path="/tables" component={TablesExample} />
+          <Route path="/text-effects" component={TextEffectsExample} />
+          <Route path="/tooltips" component={TooltipExample} />
+          <Route path="/videos" component={VideosExample} />
         </Switch>
       </div>
     );

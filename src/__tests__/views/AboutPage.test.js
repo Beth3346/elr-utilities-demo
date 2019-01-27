@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import { Link, Route, Router, Switch } from 'react-router-dom';
 // this adds custom jest matchers from jest-dom
 import 'jest-dom/extend-expect';
-import App from '@/App';
+import AboutPage from '@/views/AboutPage/AboutPage';
 
 afterEach(cleanup);
 function renderWithRouter(
@@ -22,6 +22,6 @@ function renderWithRouter(
 }
 
 test('full app rendering/navigating', () => {
-  const { container } = renderWithRouter(<App />);
-  expect(container.innerHTML).toMatch('ELR Utilities');
+  const { container } = renderWithRouter(<AboutPage />);
+  expect(container.innerHTML).toMatch('About ELR Utilities');
 });

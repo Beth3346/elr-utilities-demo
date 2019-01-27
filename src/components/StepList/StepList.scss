@@ -1,0 +1,14 @@
+.elr-step-list {
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+
+.elr-step-item-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}

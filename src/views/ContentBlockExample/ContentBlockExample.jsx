@@ -4,6 +4,7 @@ import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
 import MediaBox from '@//components/MediaBox/MediaBox';
 import art from '@/assets/images/art002.jpg';
+import ContactCard from '../../components/ContactCard/ContactCard';
 
 const ContentBlockExample = () => (
   <div>
@@ -19,6 +20,9 @@ const ContentBlockExample = () => (
               pariatur assumenda, rerum quaerat libero, unde eum laborum
             </p>
           </MediaBox>
+        </ExampleSection>
+        <ExampleSection heading="Contact Card" subheading="">
+          <ContactCard />
         </ExampleSection>
       </section>
     </ContentMain>
