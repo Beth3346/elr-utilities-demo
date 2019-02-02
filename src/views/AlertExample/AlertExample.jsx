@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
+import Alert from '../../components/Alert/Alert';
 
-const AlertExample = () => (
-  <div>
-    <Header heading="Alert">Alert Example</Header>
-    <ContentMain>
-      <section id="accordion">
-        <ExampleSection heading="Alert" subheading="" />
-      </section>
-    </ContentMain>
-  </div>
-);
+class AlertExample extends Component {
+  state = {
+    show: false
+  };
+
+  handleAlert = display => this.setState(show => ({ show: display }));
+
+  render() {
+    return (
+      <div>
+        <Header heading="Alert">Alert Example</Header>
+        <ContentMain>
+          <section id="alerts">
+            <ExampleSection heading="Alert" subheading="">
+              <button
+                onClick={() => this.handleAlert(true)}
+                className="elr-button elr-button-primary"
+              >
+                Launch Alert
+              </button>
+              <Alert handleAlert={this.handleAlert} show={this.state.show} />
+            </ExampleSection>
+          </section>
+        </ContentMain>
+      </div>
+    );
+  }
+}
 
 export default AlertExample;

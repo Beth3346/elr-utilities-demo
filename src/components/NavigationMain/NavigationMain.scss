@@ -1,10 +1,16 @@
+.navigation-main {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
 .logo {
   font-size: 30px;
   font-weight: 900;
-}
 
-.logo a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 .navigation-inner {

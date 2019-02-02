@@ -1,0 +1,30 @@
+.elr-blackout {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease 0, min-height 0 ease 0.3s;
+
+  &.active {
+    z-index: 1;
+    opacity: 1;
+    min-height: 100%;
+  }
+}
+
+.elr-blackout-close {
+  font-size: 24px;
+  margin: 0;
+  padding: 1.25rem;
+  border: 0;
+  background: 0 0;
+  color: #fff;
+  position: relative;
+  top: 1.25rem;
+  left: 95%;
+  cursor: pointer;
+}
