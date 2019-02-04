@@ -1,0 +1,20 @@
+.popover-holder {
+  width: 250px;
+  margin: 20px auto;
+  position: relative;
+
+  .elr-button {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.dynamic-popover-holder {
+  .elr-popover {
+    position: absolute;
+  }
+
+  .elr-popover.active {
+    top: -30px;
+  }
+}

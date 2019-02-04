@@ -2,13 +2,16 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 
 const ProgressMeterExample = () => (
   <div>
-    <Header heading="Progress Meter">Progress Meter Example</Header>
+    <Header heading="Progress Bar">Progress Meter Example</Header>
     <ContentMain>
-      <section id="progress-meter">
-        <ExampleSection heading="" subheading="" />
+      <section id="progress-bar">
+        <ExampleSection heading="Progress Bar" subheading="">
+          <ProgressBar progress={80} />
+        </ExampleSection>
       </section>
     </ContentMain>
   </div>
