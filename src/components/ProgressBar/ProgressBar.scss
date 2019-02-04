@@ -1,0 +1,49 @@
+.elr-progress-bar {
+  height: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.elr-progress-bar-inner {
+  height: 100%;
+  width: 75%;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: repeating-linear-gradient(
+      -55deg,
+      #6bad6b 1px,
+      #4aa74a 2px,
+      #4aa74a 11px,
+      #87c085 12px,
+      #87c085 20px
+    );
+    height: 100%;
+    display: block;
+    width: 150%;
+    animation-name: MOVE-BG;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(46px);
+  }
+}
