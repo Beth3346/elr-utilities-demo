@@ -63,6 +63,11 @@ class SidebarMenu extends Component {
               url: '/accordion'
             },
             {
+              id: 15,
+              name: 'Alert',
+              url: '/alerts'
+            },
+            {
               id: 2,
               name: 'Cards',
               url: '/cards'
@@ -81,6 +86,21 @@ class SidebarMenu extends Component {
               id: 5,
               name: 'Labels',
               url: '/labels'
+            },
+            {
+              id: 13,
+              name: 'Modal',
+              url: '/modals'
+            },
+            {
+              id: 14,
+              name: 'Notification',
+              url: '/notification'
+            },
+            {
+              id: 11,
+              name: 'Popovers',
+              url: '/popovers'
             },
             {
               id: 6,
@@ -103,39 +123,19 @@ class SidebarMenu extends Component {
               url: '/steps'
             },
             {
+              id: 16,
+              name: 'Tabs',
+              url: '/tabs'
+            },
+            {
               id: 10,
               name: 'Thumbnails',
               url: '/thumbnails'
             },
             {
-              id: 11,
-              name: 'Popovers',
-              url: '/popovers'
-            },
-            {
               id: 12,
               name: 'Tooltip',
               url: '/tooltips'
-            },
-            {
-              id: 13,
-              name: 'Modal',
-              url: '/modals'
-            },
-            {
-              id: 14,
-              name: 'Notification',
-              url: '/notification'
-            },
-            {
-              id: 15,
-              name: 'Alert',
-              url: '/alerts'
-            },
-            {
-              id: 16,
-              name: 'Tabs',
-              url: '/tabs'
             }
           ]
         },
