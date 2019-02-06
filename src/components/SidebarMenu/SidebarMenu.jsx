@@ -37,6 +37,11 @@ class SidebarMenu extends Component {
               id: 5,
               name: 'Slide',
               url: '/slide'
+            },
+            {
+              id: 6,
+              name: 'Spin',
+              url: '/spin'
             }
           ]
         },

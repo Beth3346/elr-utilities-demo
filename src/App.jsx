@@ -55,6 +55,8 @@ import TablesExample from '@/views/TablesExample/TablesExample';
 import TextEffectsExample from '@/views/TextEffectsExample/TextEffectsExample';
 import TooltipExample from '@/views/TooltipExample/TooltipExample';
 import VideosExample from '@/views/VideosExample/VideosExample';
+import SpinExample from '@/views/SpinExample/SpinExample';
+import TabsExample from '@/views/TabsExample/TabsExample';
 
 class App extends Component {
   render() {
@@ -116,6 +118,8 @@ class App extends Component {
           <Route path="/text-effects" component={TextEffectsExample} />
           <Route path="/tooltips" component={TooltipExample} />
           <Route path="/videos" component={VideosExample} />
+          <Route path="/spin" component={SpinExample} />
+          <Route path="/tabs" component={TabsExample} />
         </Switch>
       </div>
     );
