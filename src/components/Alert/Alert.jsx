@@ -4,7 +4,7 @@ import './Alert.scss';
 
 const Alert = ({ show, handleAlert }) => (
   <Blackout toggle={display => handleAlert(display)} show={show}>
-    <div className="elr-modal-alert">
+    <div className="elr-modal-alert" onClick={e => e.stopPropagation()}>
       <div className="elr-modal-header">
         <h3 className="elr-modal-header-title">An Alert</h3>
       </div>

@@ -88,6 +88,11 @@ class SidebarMenu extends Component {
               url: '/labels'
             },
             {
+              id: 17,
+              name: 'Lightbox',
+              url: '/lightbox'
+            },
+            {
               id: 13,
               name: 'Modal',
               url: '/modals'

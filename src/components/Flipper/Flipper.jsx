@@ -14,21 +14,27 @@ class Flipper extends Component {
 
   render() {
     const classes = this.state.isClicked
-      ? `flipper-container active flipper-${this.props.shape}-container`
-      : `flipper-container flipper-${this.props.shape}-container`;
+      ? `elr-flipper-container active elr-flipper-${this.props.shape}-container`
+      : `elr-flipper-container elr-flipper-${this.props.shape}-container`;
 
     return (
-      <div className="flipper">
+      <div className="elr-flipper">
         <div
           onClick={this.handleClick}
           className={classes}
           role="button"
           aria-pressed={this.state.isClicked}
         >
-          <div className={`flipper-front flipper-${this.props.shape}-front`}>
+          <div
+            className={`elr-flipper-front elr-flipper-${
+              this.props.shape
+            }-front`}
+          >
             <p>{this.props.front}</p>
           </div>
-          <div className={`flipper-back flipper-${this.props.shape}-back`}>
+          <div
+            className={`elr-flipper-back elr-flipper-${this.props.shape}-back`}
+          >
             <p>{this.props.children}</p>
           </div>
         </div>
