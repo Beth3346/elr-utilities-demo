@@ -1,3 +1,5 @@
+@import '~elr-scss-animations/src/slide-down';
+
 .slide-box {
   height: 400px;
   width: 300px;
@@ -7,32 +9,23 @@
   background-color: #1976d2;
   padding: 10px 15px;
   color: #fff;
-  border-radius: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
   cursor: pointer;
   display: block;
   font-size: 16px;
 }
 
 .elr-slide-down {
-  max-height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
+  @include elr-slide;
   background-color: #1976d2;
   color: #fff;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-radius: 0.3125rem;
-
-  &.active {
-    max-height: 31.25rem;
-    visibility: visible;
-    transition: max-height 0.5s ease-in;
-  }
+  border-radius: 5px;
 
   li {
-    padding: 0.3125rem 0.625rem;
+    padding: 5px 10px;
   }
 }
