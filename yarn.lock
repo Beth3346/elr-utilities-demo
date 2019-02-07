@@ -2550,6 +2550,14 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+elr-scss-animated-icons@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-animated-icons/-/elr-scss-animated-icons-1.2.3.tgz#2181bdbc5af4752adc29547f073b15af8b004aaa"
+  integrity sha512-aXtuUB64j1suiSoM272dOOyk7zH6xEOXqJYMwZMq2tsmJFNLSGDzPs4ECXhVteu7vIazssHPkuo4Njk1spvn+g==
+  dependencies:
+    elr-scss-animations "^0.0.4"
+    elr-scss-functions "0.1.2"
+
 elr-scss-animations@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/elr-scss-animations/-/elr-scss-animations-0.0.1.tgz#e7ad3ced2f3cef4ba757cedbb6e849a2f4b3dd1d"
@@ -2557,7 +2565,7 @@ elr-scss-animations@0.0.1:
   dependencies:
     elr-scss-functions "0.0.2"
 
-elr-scss-animations@0.0.4:
+elr-scss-animations@0.0.4, elr-scss-animations@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/elr-scss-animations/-/elr-scss-animations-0.0.4.tgz#14c83196103b02a82712442557347afb298240ac"
   integrity sha512-QdEBPvYO4NAsuOHP677LN9qkNmo//t8mhtSTLUVNroKWNj3Ub7fM+8m77XDAEBS7Rln4Cjsf+985S5xX3t3NqA==
