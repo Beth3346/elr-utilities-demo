@@ -1,76 +1,51 @@
+@import '~elr-scss-alerts';
+
 .elr-notification {
-  padding: 0.625rem 1.25rem;
-  max-width: 100%;
-  position: relative;
-  color: #fff;
-  background-color: #333;
-  border: 1px solid #333;
-  border-radius: 3px;
-  margin-bottom: 0.625rem;
+  @include elr-alert(
+    $config: (
+      border-radius: 3px
+    )
+  );
+  margin: 10px 0;
+  max-width: 768px;
 }
-.elr-notification:after,
-.elr-notification:before {
-  content: '';
-  display: table;
+
+.elr-notification-info {
+  @include elr-alert-context(
+    $config: (
+      type: info
+    )
+  );
 }
-.elr-notification:after {
-  clear: both;
+
+.elr-notification-danger {
+  @include elr-alert-context(
+    $config: (
+      type: danger
+    )
+  );
 }
-.elr-notification p {
-  padding: 0.625rem 0;
+
+.elr-notification-warning {
+  @include elr-alert-context(
+    $config: (
+      type: warning
+    )
+  );
 }
-.elr-notification .close {
-  width: 1.25rem;
-  height: 1.25rem;
-  display: block;
-  font-size: 0.875rem;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  right: 0.3125rem;
-  top: 0.1875rem;
-  border: 0;
-  background: 0 0;
-  -webkit-transition: color, 0.3s;
-  -o-transition: color, 0.3s;
-  transition: color, 0.3s;
-  color: #fff;
+
+.elr-notification-success {
+  @include elr-alert-context(
+    $config: (
+      type: success
+    )
+  );
 }
-.elr-notification .close:hover {
-  cursor: pointer;
-}
-.elr-info-notification {
-  background-color: #7dcef6;
-  border-color: #1daaf0;
-  color: #0c7db5;
-}
-.elr-danger-notification {
-  background-color: #fb9391;
-  border-color: #f7322f;
-  color: #d10b08;
-}
-.elr-warning-notification {
-  background-color: #e4e087;
-  border-color: #d1cb34;
-  color: #969222;
-}
-.elr-success-notification {
-  background-color: #bdddbe;
-  border-color: #7aba7b;
-  color: #4f9850;
-}
-.elr-muted-notification {
-  background-color: #ccc;
-  border-color: #999;
-  color: #737373;
-}
-.elr-custom-notification {
-  background-color: #64a9ed;
-  border-color: #1976d2;
-  color: #fff;
-}
-.elr-purple-notification {
-  background-color: #f4739d;
-  border-color: #ed145b;
-  color: #fff;
+
+.elr-notification-muted {
+  @include elr-alert-context(
+    $config: (
+      type: muted
+    )
+  );
 }
