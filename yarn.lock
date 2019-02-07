@@ -2550,6 +2550,13 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+elr-scss-alerts@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/elr-scss-alerts/-/elr-scss-alerts-0.1.4.tgz#2b46adb27a4a2d9a7cd2f2ad10c620ff4021f556"
+  integrity sha512-6wmVK54YVZvObUj0oZlKnIqvXaEC44mRXRdK3HdH8Df20d8J8QIvcW43H73E7T0izuwP5+ANtwMLn1KzlXAyaQ==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-animated-icons@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/elr-scss-animated-icons/-/elr-scss-animated-icons-1.2.3.tgz#2181bdbc5af4752adc29547f073b15af8b004aaa"
