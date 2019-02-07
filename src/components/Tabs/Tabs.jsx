@@ -5,6 +5,7 @@ import TabNav from '@/components/Tabs/TabNav';
 import img from '@/assets/images/cat.jpg';
 import img2 from '@/assets/images/cat2.jpg';
 import img3 from '@/assets/images/cat3.jpg';
+import img4 from '@/assets/images/cat4.jpg';
 
 class Tabs extends Component {
   state = {
@@ -107,7 +108,7 @@ class Tabs extends Component {
           </TabContent>
           <TabContent show={this.state.current === 4} title="Tab 4">
             <figure>
-              <img src={img} alt="" />
+              <img src={img4} alt="" />
             </figure>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.

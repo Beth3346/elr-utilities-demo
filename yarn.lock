@@ -2567,6 +2567,13 @@ elr-scss-animations@0.0.4:
     elr-scss-animations "0.0.1"
     elr-scss-functions "0.1.2"
 
+elr-scss-base@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-base/-/elr-scss-base-0.0.3.tgz#97a62c6f3e34d94ae28d00ce44e1c671147576c8"
+  integrity sha512-8KQ83OrF6B79xaXZ8oAx8ACEp4gtG3yirHc6H7upbLqClzi1YVi7TIW7Hrsv7p0Wr8mwlzM9WePYfmpqDMFIuA==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-functions@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.0.2.tgz#fd4852d87f2efc2499684e01cb712d6c52081654"
@@ -2576,6 +2583,14 @@ elr-scss-functions@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.1.2.tgz#4dd9e4a5784fdf6d28367306cf504021491682cb"
   integrity sha512-46R+08NzLMbNHAlxea99+ld8eCv5xMqkKJfhMSui7hsR23JY0f/WGBTWK5hHrhStcpapqya8L5e3dUJ88EKwgA==
+
+elr-scss-reset@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-reset/-/elr-scss-reset-0.0.3.tgz#772ab27cdd61bdf498978583d82a54434ebff61f"
+  integrity sha512-05GY3OxlwoHSE4V2GXGc9hTSkc8Kjuo/khFYBgk89tr3/k8jB55X/eBAWHu90BFpJJJUaJgKlBU/6DXks20Krw==
+  dependencies:
+    elr-scss-animations "0.0.1"
+    elr-scss-functions "0.1.2"
 
 emoji-regex@^6.1.0:
   version "6.5.1"

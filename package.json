@@ -16,6 +16,8 @@
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
     "elr-scss-animations": "0.0.4",
+    "elr-scss-base": "^0.0.3",
+    "elr-scss-reset": "^0.0.3",
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
