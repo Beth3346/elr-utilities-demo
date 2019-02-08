@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ExpandingLineMenu.css';
+import './ExpandingLineMenu.scss';
 import MenuItem from '@/components/MenuItem/MenuItem';
 
 class ExpandingLineMenu extends Component {

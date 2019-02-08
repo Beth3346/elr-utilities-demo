@@ -2550,6 +2550,14 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
+elr-scss-accordion@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/elr-scss-accordion/-/elr-scss-accordion-1.1.2.tgz#2bb4169d48bc85623264ad6efa8c0907397ad1ad"
+  integrity sha512-EwQV/7UmtJHb0pJp/Xss5a7IRiucthht03GlSG10HOatRdMXq90N69b+6FyUmpMdc2+C3SFWipmcONIe9EXqNw==
+  dependencies:
+    elr-scss-animations "0.0.2"
+    elr-scss-functions "0.1.2"
+
 elr-scss-alerts@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/elr-scss-alerts/-/elr-scss-alerts-0.1.4.tgz#2b46adb27a4a2d9a7cd2f2ad10c620ff4021f556"
@@ -2565,12 +2573,29 @@ elr-scss-animated-icons@^1.2.3:
     elr-scss-animations "^0.0.4"
     elr-scss-functions "0.1.2"
 
+elr-scss-animated-menus@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/elr-scss-animated-menus/-/elr-scss-animated-menus-0.0.7.tgz#9eac6996bbdf79dd4f8e83c1eebd669b3aaff987"
+  integrity sha512-ZHoXG+vVUi55GLwOY9j1BUqyZw3BCkC12ZM2RpWZ1ID8uV45qqkTYG6HM0gjN5Izv5y3EwNIbGfE46Ecbp9wmA==
+  dependencies:
+    elr-scss-animations "0.0.1"
+    elr-scss-functions "0.1.2"
+
 elr-scss-animations@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/elr-scss-animations/-/elr-scss-animations-0.0.1.tgz#e7ad3ced2f3cef4ba757cedbb6e849a2f4b3dd1d"
   integrity sha512-Flne8DdrzYL95yT6na0ew8u4sE+Zsa8QUX4fRaXt0PTSZkp7/o76hKhYB4jZae8CJBmzHjoJ3TMogTHSeKVGoQ==
   dependencies:
     elr-scss-functions "0.0.2"
+
+elr-scss-animations@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/elr-scss-animations/-/elr-scss-animations-0.0.2.tgz#0463b776c19d2b7ac4cf9a45ddade79801406857"
+  integrity sha1-BGO3dsGdK3rEz5pF3a3nmAFAaFc=
+  dependencies:
+    babel-runtime "^6.26.0"
+    elr-scss-animations "0.0.1"
+    elr-scss-functions "0.1.2"
 
 elr-scss-animations@0.0.4, elr-scss-animations@^0.0.4:
   version "0.0.4"

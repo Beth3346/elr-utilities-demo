@@ -1,0 +1,5 @@
+@import '~elr-scss-animated-menus/src/menu-expanding-lines';
+
+.menu-expanding-lines {
+  @include menu-expanding-lines();
+}
