@@ -5,7 +5,7 @@ const MenuItem = ({ current, handleClick, index, item }) => {
 
   return (
     <li onClick={() => handleClick(index)} className={classes}>
-      <a className="menu-link">{item}</a>
+      <a className="menu-item-button">{item}</a>
     </li>
   );
 };

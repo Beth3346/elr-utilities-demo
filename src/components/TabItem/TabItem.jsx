@@ -6,7 +6,7 @@ const TabItem = ({ current, handleClick, index, item }) => {
 
   return (
     <li onClick={() => handleClick(index)} className={classes}>
-      <button className="tab-link">{item}</button>
+      <button className="menu-item-button">{item}</button>
     </li>
   );
 };

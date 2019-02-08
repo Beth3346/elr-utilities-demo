@@ -1,125 +1,20 @@
+@import '~elr-scss-accordion';
+
 .elr-accordion {
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-  max-width: 50rem;
-}
-
-.elr-accordion-content,
-.elr-accordion-label {
-  background-color: #fff;
-  border: 1px solid #1976d2;
-  border-radius: 5px;
-}
-
-.elr-accordion-label {
-  margin: 0 0 0.3125rem;
-  padding: 10px 20px;
-  font-size: 1.125rem;
-  color: #333;
-  font-weight: 400;
-  position: relative;
-  padding-left: 1.875rem;
-}
-
-.elr-accordion-label:hover {
-  cursor: pointer;
-}
-
-.elr-accordion-label.active .elr-accordion-icon {
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-}
-
-.elr-accordion-icon {
-  font-size: 0.875rem;
-  color: #00f;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  line-height: 1;
-  position: absolute;
-  left: 15px;
-  top: 14px;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-.elr-accordion-content {
-  max-height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1),
-    visibility 0.2s;
-  -o-transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
-  transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
-  padding: 0;
-}
-
-.elr-accordion-content.active {
-  max-height: 31.25rem;
-  visibility: visible;
-  -webkit-transition: max-height 0.5s ease-in;
-  -o-transition: max-height 0.5s ease-in;
-  transition: max-height 0.5s ease-in;
-}
-
-.elr-accordion-content.active {
-  margin-bottom: 0.3125rem;
-}
-
-.elr-accordion-inner {
-  padding: 0.625rem 1.25rem;
-}
-
-.elr-accordion-label {
-  font-size: 18px;
-  font-weight: 700;
-  border: 1px solid #ccc;
-  margin: 5px 0;
-  cursor: pointer;
-  border-radius: 5px;
-
-  &h2 {
-    font-size: 16px;
-  }
-}
-
-.elr-accordion-content {
-  font-size: 14px;
-  border: 0;
-  border-radius: 5px;
-  visibility: hidden;
-  overflow: hidden;
-  margin: 0;
-  max-height: 0;
-  transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1), visibility 0.2s;
+  @include elr-accordion;
+  max-width: 600px;
+  margin: 20px 0;
 }
 
 .elr-accordion-content p {
   padding: 5px 20px;
   font-size: 14px;
-}
 
-.elr-accordion-content p:first-child {
-  padding-top: 15px;
-}
+  &:first-child {
+    padding-top: 15px;
+  }
 
-.elr-accordion-content p:last-child {
-  padding-bottom: 15px;
-}
-
-.elr-accordion-content.active {
-  visibility: visible;
-  max-height: 2000px;
-  transition: max-height 0.5s ease-in;
-  border: 1px solid #ccc;
-}
-
-.elr-accordion {
-  max-width: 600px;
-  margin: 20px 0;
+  &:last-child {
+    padding-bottom: 15px;
+  }
 }
