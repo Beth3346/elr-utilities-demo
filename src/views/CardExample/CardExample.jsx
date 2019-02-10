@@ -31,7 +31,22 @@ const CardExample = () => (
             <ContentCard
               title="A Border Card"
               buttonText="Click Here"
-              classes="elr-card elr-card-border"
+              classes="elr-card-border"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                quae! Dolores saepe mollitia praesentium totam dolorum ratione
+                asperiores eum aut!
+              </p>
+            </ContentCard>
+          </div>
+        </ExampleSection>
+        <ExampleSection heading="Border Card Centered" subheading="">
+          <div className="card-holder">
+            <ContentCard
+              title="A Border Card"
+              buttonText="Click Here"
+              classes="elr-card-border elr-card-centered"
             >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,

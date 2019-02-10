@@ -2614,6 +2614,21 @@ elr-scss-base@^0.0.3:
   dependencies:
     elr-scss-functions "0.1.2"
 
+elr-scss-buttons@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elr-scss-buttons/-/elr-scss-buttons-0.0.1.tgz#87afded53fa55b72fa2a6072af0ca3ab6d7f212e"
+  integrity sha512-onpby3VbSUYPsChLJYE88tovL3bhx6sDBh22ewoHAJT2CCqcLD1+C+HIN2AxdE22OvHj+5trsnqo11cNBWV9LA==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
+elr-scss-cards@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-cards/-/elr-scss-cards-0.0.3.tgz#c0b82d35047f70d5768c8da68a93fcc407e06666"
+  integrity sha512-1zZ6UjIew3jSUb8XMf18ybe7dyL3yVieJGqUVdHi3oju97KJcvdBEODLND3xXuNBly2MVmenHBHJKaGwZwZLMQ==
+  dependencies:
+    elr-scss-buttons "^0.0.1"
+    elr-scss-functions "0.1.2"
+
 elr-scss-functions@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.0.2.tgz#fd4852d87f2efc2499684e01cb712d6c52081654"
