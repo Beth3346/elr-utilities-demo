@@ -1,85 +1,37 @@
-.elr-label-corner {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  border-color: #ed145b;
-
-  .elr-label-triangle {
-    width: 0;
-    height: 0;
-    border-width: 30px;
-    border-style: solid;
-    border-top-color: inherit;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: inherit;
-    text-align: center;
-  }
-
-  .elr-label-icon {
-    font-size: 14px;
-    position: absolute;
-    color: #fff;
-  }
-}
+@import '~elr-scss-labels/src/label-corner';
 
 .elr-label-corner-top {
-  top: 0;
-  left: 0;
+  @include elr-label-corner(
+    $config: (
+      position-x: 'left',
+      position-y: 'top'
+    )
+  );
 }
 
 .elr-label-corner-right {
-  top: 0;
-  right: 0;
+  @include elr-label-corner(
+    $config: (
+      position-x: 'right',
+      position-y: 'top'
+    )
+  );
 }
 
 .elr-label-corner-bottom {
-  bottom: 0;
-  left: 0;
+  @include elr-label-corner(
+    $config: (
+      position-x: 'left',
+      position-y: 'bottom'
+    )
+  );
 }
 
 .elr-label-corner-bottom-right {
-  bottom: 0;
-  right: 0;
-}
-
-.elr-label-corner-right .elr-label-triangle {
-  border-top-color: inherit;
-  border-right-color: inherit;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-}
-
-.elr-label-corner-bottom .elr-label-triangle {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: inherit;
-  border-left-color: inherit;
-}
-
-.elr-label-corner-bottom-right .elr-label-triangle {
-  border-top-color: transparent;
-  border-right-color: inherit;
-  border-bottom-color: inherit;
-  border-left-color: transparent;
-}
-
-.elr-label-corner-top .elr-label-icon {
-  left: 12px;
-  top: 10px;
-}
-
-.elr-label-corner-right .elr-label-icon {
-  right: 12px;
-  top: 10px;
-}
-
-.elr-label-corner-bottom .elr-label-icon {
-  left: 12px;
-  top: 30px;
-}
-
-.elr-label-corner-bottom-right .elr-label-icon {
-  right: 12px;
-  top: 30px;
+  @include elr-label-corner(
+    $config: (
+      position-x: 'right',
+      position-y: 'bottom'
+    )
+  );
 }

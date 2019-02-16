@@ -1,33 +1,5 @@
+@import '~elr-scss-labels/src/label-ribbon';
+
 .elr-label-ribbon {
-  color: #fff;
-  background-color: #333;
-  text-align: right;
-  font-weight: 900;
-  position: absolute;
-  top: 1.25rem;
-  padding-left: 1.25rem;
-  left: -15px;
-  line-height: 1;
-  border-radius: 0 0.1875rem 0.1875rem 0;
-
-  &::before {
-    width: 0;
-    height: 0;
-    border-top: 7.5px solid #1a1a1a;
-    border-right: 7.5px solid #1a1a1a;
-    border-bottom: 7.5px solid transparent;
-    border-left: 7.5px solid transparent;
-    content: '';
-    bottom: -15px;
-    left: 0;
-    position: absolute;
-    display: block;
-  }
-}
-
-.elr-label-ribbon-title {
-  padding: 0.625rem 1.25rem 0.625rem 0;
-  color: #fff;
-  display: inline-block;
-  font-size: 0.75rem;
+  @include elr-label-ribbon;
 }

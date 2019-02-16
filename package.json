@@ -23,6 +23,7 @@
     "elr-scss-base": "^0.0.3",
     "elr-scss-cards": "^0.0.3",
     "elr-scss-comment": "^0.0.4",
+    "elr-scss-labels": "^0.0.1",
     "elr-scss-reset": "^0.0.3",
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",

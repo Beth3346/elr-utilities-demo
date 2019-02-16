@@ -2646,6 +2646,14 @@ elr-scss-functions@0.1.2:
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.1.2.tgz#4dd9e4a5784fdf6d28367306cf504021491682cb"
   integrity sha512-46R+08NzLMbNHAlxea99+ld8eCv5xMqkKJfhMSui7hsR23JY0f/WGBTWK5hHrhStcpapqya8L5e3dUJ88EKwgA==
 
+elr-scss-labels@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elr-scss-labels/-/elr-scss-labels-0.0.1.tgz#34699e691e85f44f19e13017903fc3ff3d1f424e"
+  integrity sha512-S1vxYpM6ReC2PCh7Ow4SbrBAc59b4E2Z1p4f15NpxULqGMSycTFQAvVfY09f+ik6iVTQFL2vmWsp4nxm41Yyfw==
+  dependencies:
+    elr-scss-animations "0.0.4"
+    elr-scss-functions "0.1.2"
+
 elr-scss-reset@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/elr-scss-reset/-/elr-scss-reset-0.0.3.tgz#772ab27cdd61bdf498978583d82a54434ebff61f"
