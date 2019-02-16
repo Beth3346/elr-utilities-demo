@@ -14,8 +14,8 @@ class PillLabel extends Component {
   render() {
     const { icon, title, value, dismissible, contextClass } = this.props;
     const classes = this.state.isActive
-      ? `elr-label ${contextClass}`
-      : `elr-label fade ${contextClass}`;
+      ? `elr-label ${contextClass ? contextClass : ''}`
+      : `elr-label fade ${contextClass ? contextClass : ''}`;
 
     return (
       this.state.show && (
@@ -24,10 +24,9 @@ class PillLabel extends Component {
           <span className="elr-label-title">{title}</span>
           {value && <span className="elr-label-value">{value}</span>}
           {dismissible && (
-            <span
-              onClick={this.handleClick}
-              className="fa fa-times elr-label-close"
-            />
+            <button onClick={this.handleClick}>
+              <span className="fa fa-times elr-label-close" />
+            </button>
           )}
         </div>
       )

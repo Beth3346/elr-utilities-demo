@@ -2629,6 +2629,13 @@ elr-scss-cards@^0.0.3:
     elr-scss-buttons "^0.0.1"
     elr-scss-functions "0.1.2"
 
+elr-scss-comment@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/elr-scss-comment/-/elr-scss-comment-0.0.4.tgz#a988921b27b45e3e18e2eda6eaafe174775c763d"
+  integrity sha512-0chfBgT0uD2qjgwFuMEyOUIA4kaezoaT+CDH6bJgj/ing4nJtgQ/PgqQZPQLWPNym7zz3jsVwvz9tDFWYNxv2w==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-functions@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.0.2.tgz#fd4852d87f2efc2499684e01cb712d6c52081654"

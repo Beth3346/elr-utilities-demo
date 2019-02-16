@@ -3,8 +3,8 @@ import './Comment.scss';
 
 const Comment = ({ avatar, author, timestamp, body }) => (
   <div className="elr-comment">
-    <figure className="elr-avatar">
-      <img src={avatar} alt="" />
+    <figure className="elr-comment-avatar">
+      <img src={avatar} alt={author} />
     </figure>
     <div className="elr-comment-content">
       <div className="elr-comment-heading">
@@ -13,8 +13,8 @@ const Comment = ({ avatar, author, timestamp, body }) => (
       </div>
       <div className="elr-comment-body">
         <p>{body}</p>
+        <button className="elr-comment-reply">Reply</button>
       </div>
-      <button className="elr-comment-reply">Reply</button>
     </div>
   </div>
 );

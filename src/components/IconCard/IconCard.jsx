@@ -1,6 +1,5 @@
 import React from 'react';
 import '../ContentCard/ContentCard.scss';
-// import './IconCard.scss';
 
 const IconCard = ({ children, title, buttonText, icon }) => (
   <div className="elr-card-border elr-card-centered elr-icon-card">
