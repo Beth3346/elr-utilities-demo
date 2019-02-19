@@ -57,6 +57,7 @@ import TooltipExample from '@/views/TooltipExample/TooltipExample';
 import VideosExample from '@/views/VideosExample/VideosExample';
 import SpinExample from '@/views/SpinExample/SpinExample';
 import TabsExample from '@/views/TabsExample/TabsExample';
+import LightboxExample from '@/views/LightboxExample/LightboxExample';
 
 class App extends Component {
   render() {
@@ -120,6 +121,7 @@ class App extends Component {
           <Route path="/videos" component={VideosExample} />
           <Route path="/spin" component={SpinExample} />
           <Route path="/tabs" component={TabsExample} />
+          <Route path="/lightbox" component={LightboxExample} />
         </Switch>
       </div>
     );
