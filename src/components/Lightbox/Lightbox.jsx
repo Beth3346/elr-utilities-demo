@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Lightbox.scss';
 
-const Lightbox = ({ images }) => {
-  // // Declare a new state variable, which we'll call "count"
+const Lightbox = ({ images, hideLightbox, handleEscPress }) => {
   const [current, setCurrent] = useState(1);
   const len = images.length;
 
@@ -12,8 +11,21 @@ const Lightbox = ({ images }) => {
   const next = () =>
     current === len ? setCurrent(1) : setCurrent(current + 1);
 
+  const handleKeyPress = event => {
+    if (event.keyCode === 27) {
+      handleEscPress(event);
+    } else if (event.keyCode === 37) {
+      prev();
+    } else if (event.keyCode === 39) {
+      next();
+    }
+  };
+
   return (
-    <div className="elr-lightbox">
+    <div tabIndex="0" onKeyDown={handleKeyPress} className="elr-lightbox">
+      <button className="elr-lightbox-close" onClick={hideLightbox}>
+        &times;
+      </button>
       <button onClick={prev} className="elr-lightbox-nav-button">
         Prev
       </button>

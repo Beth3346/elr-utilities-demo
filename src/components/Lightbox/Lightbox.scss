@@ -7,23 +7,19 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 20;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .elr-lightbox-images {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 768px;
+  max-width: 768px;
   height: 500px;
   position: relative;
-
-  img {
-    height: auto;
-    max-width: 100%;
-  }
 }
 
 .elr-lightbox-caption {
@@ -34,8 +30,12 @@
 
 .elr-lightbox-nav-button {
   background-color: transparent;
-  color: #fff;
+  color: #333;
   font-size: 24px;
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
 }
 
 .elr-lightbox-image {
@@ -43,8 +43,26 @@
   position: absolute;
   top: 0;
   transition: opacity 0.3s;
+  width: 100%;
+  text-align: center;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 
   &.active {
     opacity: 1;
   }
+}
+
+.elr-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  font-size: 24px;
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
 }
