@@ -42,7 +42,10 @@
 }
 
 .example-holder {
-  padding: 1.25rem 0;
+  padding: 20px;
+  position: relative;
+  background-color: #eee;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
 
   .card-holder {
     display: flex;

@@ -1,0 +1,91 @@
+.elr-modal {
+  position: relative;
+  background-color: #fff;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  // max-height: 0;
+  transition: opacity 0.3s;
+
+  &.active {
+    opacity: 1;
+    // max-height: 3000px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.elr-modal-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.elr-modal-footer {
+  border-top: 1px solid #ccc;
+}
+
+.elr-modal-body,
+.elr-modal-footer,
+.elr-modal-header {
+  padding: 10px 20px;
+}
+
+.elr-modal-body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 300px;
+}
+
+.elr-modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.elr-modal-close {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 900;
+  right: 5px;
+  top: 5px;
+  padding: 10px 16px;
+  margin: 0;
+}
+
+.elr-modal-heading-main,
+.elr-modal-heading-sub {
+  padding: 0 0 5px;
+  margin: 0;
+}
+
+.elr-modal-heading-main {
+  padding-top: 5px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.elr-modal-heading-sub {
+  color: #999;
+  font-size: 14px;
+}
+
+.elr-modal-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  width: 90%;
+  text-align: center;
+
+  iframe {
+    display: inline-block;
+  }
+}
