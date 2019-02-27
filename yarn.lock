@@ -2658,6 +2658,13 @@ elr-scss-functions@0.1.2:
   resolved "https://registry.yarnpkg.com/elr-scss-functions/-/elr-scss-functions-0.1.2.tgz#4dd9e4a5784fdf6d28367306cf504021491682cb"
   integrity sha512-46R+08NzLMbNHAlxea99+ld8eCv5xMqkKJfhMSui7hsR23JY0f/WGBTWK5hHrhStcpapqya8L5e3dUJ88EKwgA==
 
+elr-scss-grid@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-grid/-/elr-scss-grid-0.0.3.tgz#33029ee11f1a1fc680ae069ab112e56caf4b083d"
+  integrity sha512-fjOVt8YYVDWmlF5ybSswew1qbMsfYbtjFmGMQoMAoFv2O7QT5z8+pnwZADIhWXIpWrZZczvafJwOiP2W9SM/cg==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-labels@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/elr-scss-labels/-/elr-scss-labels-0.0.1.tgz#34699e691e85f44f19e13017903fc3ff3d1f424e"
