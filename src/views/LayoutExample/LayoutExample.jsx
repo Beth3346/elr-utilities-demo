@@ -7,8 +7,8 @@ const LayoutExample = () => (
   <div>
     <Header heading="Layout">Layout Example</Header>
     <ContentMain>
-      <section id="buttons">
-        <ExampleSection heading="" subheading="" />
+      <section id="layout">
+        <ExampleSection heading="Layout Helpers" subheading="" />
       </section>
     </ContentMain>
   </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Lightbox.scss';
+import LightboxImage from './LightboxImage';
 
 const Lightbox = ({ images, hideLightbox, handleEscPress }) => {
   const [current, setCurrent] = useState(1);
@@ -30,15 +31,7 @@ const Lightbox = ({ images, hideLightbox, handleEscPress }) => {
         Prev
       </button>
       <div className="elr-lightbox-images">
-        {images.map(image => (
-          <div
-            key={image.id}
-            className={`elr-lightbox-image ${image.id === current && `active`}`}
-          >
-            <img src={image.src} alt="" />
-            <p className="elr-lightbox-caption">{image.caption}</p>
-          </div>
-        ))}
+        <LightboxImage image={images.find(image => image.id === current)} />
       </div>
       <button onClick={next} className="elr-lightbox-nav-button">
         Next

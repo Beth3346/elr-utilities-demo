@@ -14,10 +14,23 @@ const LightboxExample = () => {
     {
       id: 1,
       src: img,
-      caption: 'A photo of a cute cat'
+      caption:
+        'A photo of a cute kitten. This kitten looks like he is playing. So Cute!',
+      title: 'A Cat Photo'
     },
-    { id: 2, src: img2, caption: 'Another photo of a cute cat' },
-    { id: 3, src: img3, caption: 'Yet another photo of a cute cat' }
+    {
+      id: 2,
+      src: img2,
+      caption:
+        'Another photo of a cute cat. Paw at your fat belly refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am, and eat the rubberband for curl up and sleep on the freshly laundered towels but dream about hunting birds. Lounge in doorway annoy kitten brother with poking for throw down all the stuff in the kitchen present belly, scratch hand when stroked. Why must they do that spit up on light gray carpet instead of adjacent linoleum, but i’m so hungry i’m so hungry but ew not for that hit you unexpectedly reward the chosen human with a slow blink. ',
+      title: 'A Cat Photo'
+    },
+    {
+      id: 3,
+      src: img3,
+      caption: 'Yet another photo of a cute cat',
+      title: 'A Cat Photo'
+    }
   ];
 
   const handleEscPress = () => setShow(false);
