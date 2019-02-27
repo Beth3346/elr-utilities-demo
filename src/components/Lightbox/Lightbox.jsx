@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Lightbox.scss';
 import LightboxImage from './LightboxImage';
+import CloseButton from './CloseButton';
 
 const Lightbox = ({ images, hideLightbox, handleEscPress }) => {
   const [current, setCurrent] = useState(1);
@@ -24,17 +25,17 @@ const Lightbox = ({ images, hideLightbox, handleEscPress }) => {
 
   return (
     <div tabIndex="0" onKeyDown={handleKeyPress} className="elr-lightbox">
-      <button className="elr-lightbox-close" onClick={hideLightbox}>
-        &times;
-      </button>
+      <CloseButton handleClick={hideLightbox} />
       <button onClick={prev} className="elr-lightbox-nav-button">
-        Prev
+        <i class="fas fa-angle-left" />
       </button>
       <div className="elr-lightbox-images">
-        <LightboxImage image={images.find(image => image.id === current)} />
+        {images.map(image => (
+          <LightboxImage image={image} current={current} />
+        ))}
       </div>
       <button onClick={next} className="elr-lightbox-nav-button">
-        Next
+        <i class="fas fa-angle-right" />
       </button>
     </div>
   );

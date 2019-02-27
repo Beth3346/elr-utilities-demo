@@ -25,6 +25,13 @@
 .elr-lightbox-image {
   width: 100%;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+
+  &.active {
+    opacity: 1;
+  }
 
   img {
     height: auto;
