@@ -16,6 +16,14 @@ const ListExample = () => (
             <li>Item 4</li>
           </ul>
         </ExampleSection>
+        <ExampleSection heading="Ordered Lists" subheading="some lists">
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ol>
+        </ExampleSection>
       </section>
     </ContentMain>
   </div>
