@@ -23,6 +23,12 @@
   color: #1976d2;
 }
 
+pre {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
 .example-section {
   padding-bottom: 5rem;
   width: 100%;
@@ -56,5 +62,27 @@
       margin-left: 20px;
       max-width: 500px;
     }
+  }
+}
+
+.implementation h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.implementation pre {
+  margin: 15px 0;
+}
+
+code {
+  display: block;
+}
+
+.example-instructions {
+  padding: 15px 30px;
+  background-color: #fff;
+
+  p {
+    font-size: 14px;
   }
 }

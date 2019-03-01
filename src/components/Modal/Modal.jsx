@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.scss';
 
-const Modal = ({ show, handleClose }) => {
+const Modal = ({ show, handleClose, handleAccept, handleCancel }) => {
   return (
     <div className={`elr-modal ${show && 'active'}`}>
       <div className="elr-modal-header">
@@ -62,8 +62,15 @@ const Modal = ({ show, handleClose }) => {
         </div>
       </div>
       <div className="elr-modal-footer">
-        <button className="elr-button elr-button-primary">Accept</button>
-        <button className="elr-button elr-button-danger">Cancel</button>
+        <button
+          className="elr-button elr-button-primary"
+          onClick={handleAccept}
+        >
+          Accept
+        </button>
+        <button className="elr-button elr-button-danger" onClick={handleCancel}>
+          Cancel
+        </button>
       </div>
     </div>
   );

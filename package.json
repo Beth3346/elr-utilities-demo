@@ -2,6 +2,7 @@
   "name": "elr-utilities-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -21,7 +22,7 @@
     "elr-scss-animated-menus": "^0.0.7",
     "elr-scss-animations": "0.0.4",
     "elr-scss-base": "^0.0.3",
-    "elr-scss-buttons": "^0.0.1",
+    "elr-scss-buttons": "^0.0.3",
     "elr-scss-cards": "^0.0.3",
     "elr-scss-comment": "^0.0.4",
     "elr-scss-grid": "^0.0.3",

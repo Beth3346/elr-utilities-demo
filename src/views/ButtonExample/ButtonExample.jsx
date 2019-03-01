@@ -11,6 +11,8 @@ import ButtonMuted from '@/components/Buttons/ButtonMuted';
 import ButtonIcon from '@/components/Buttons/ButtonIcon';
 import ButtonGhost from '@/components/Buttons/ButtonGhost';
 import ButtonPill from '@/components/Buttons/ButtonPill';
+import ButtonIconRound from '@/components/Buttons/ButtonIconRound';
+import ButtonRaised from '@/components/Buttons/ButtonRaised';
 import './ButtonExample.scss';
 
 const ButtonExample = () => (
@@ -18,16 +20,46 @@ const ButtonExample = () => (
     <Header heading="Buttons">Buttons Example</Header>
     <ContentMain>
       <section id="buttons">
-        <ExampleSection heading="Buttons" subheading="">
+        <ExampleSection heading="Buttons" subheading="A basic button">
           <ButtonBasic>Basic Button</ButtonBasic>
+          <ButtonRaised>Raised Button</ButtonRaised>
+        </ExampleSection>
+        <ExampleSection
+          heading="Context Buttons"
+          subheading="Use context buttons when you need to assign a special meaning to a button."
+        >
           <ButtonDanger>Danger Button</ButtonDanger>
           <ButtonWarning>Warning Button</ButtonWarning>
           <ButtonSuccess>Success Button</ButtonSuccess>
           <ButtonMuted>Muted Button</ButtonMuted>
           <ButtonInfo>Info Button</ButtonInfo>
+        </ExampleSection>
+        <ExampleSection heading="Pill Buttons" subheading="">
           <ButtonPill>Pill Button</ButtonPill>
+          <ButtonPill classes="elr-button-success">Success!</ButtonPill>
+          <button className="elr-button-gradient">Gradient</button>
+        </ExampleSection>
+        <ExampleSection
+          heading="Ghost Buttons"
+          subheading="Use ghost buttons to deemphasize an action."
+        >
           <ButtonGhost>Ghost Button</ButtonGhost>
-          <ButtonIcon icon={<i class="fas fa-cat" />}>Icon Button</ButtonIcon>
+        </ExampleSection>
+        <ExampleSection
+          heading="Icon Buttons"
+          subheading="Use context buttons when you need to assign a special meaning to a button."
+        >
+          <ButtonIcon icon={<i className="fas fa-cat" />}>
+            <span className="elr-button-text">Icon Button</span>
+          </ButtonIcon>
+          <ButtonIcon
+            classes="elr-button-info"
+            icon={<i className="fas fa-cat" />}
+          >
+            <span className="elr-button-text">Icon Button</span>
+          </ButtonIcon>
+          <ButtonIcon icon={<i className="fas fa-cat" />} />
+          <ButtonIconRound icon={<i className="fas fa-cat" />} />
         </ExampleSection>
       </section>
     </ContentMain>

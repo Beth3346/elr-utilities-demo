@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
-import './AnimatedLinkExample.css';
+import './AnimatedLinkExample.scss';
 import SimpleLineTabs from '@/components/SimpleLineTabs/SimpleLineTabs';
 import DoubleLineTabs from '@/components/DoubleLineTabs/DoubleLineTabs';
 import ExpandingLineMenu from '@/components/ExpandingLineMenu/ExpandingLineMenu';
@@ -33,13 +33,13 @@ const AnimatedLinkExample = () => (
           <div className="elr-col-full">
             <h4 className="example-subheading">Simple Line</h4>
           </div>
-          <div className="elr-col-full example-holder">
+          <div className="elr-col-full">
             <SimpleLineTabs />
           </div>
           <div className="elr-col-full">
             <h4 className="example-subheading">Double Line</h4>
           </div>
-          <div className="elr-col-full example-holder">
+          <div className="elr-col-full">
             <DoubleLineTabs />
           </div>
         </ExampleSection>
@@ -63,13 +63,13 @@ const AnimatedLinkExample = () => (
           <div className="elr-col-full">
             <h4 className="example-subheading">Expanding Line Menu</h4>
           </div>
-          <div className="elr-col-full example-holder">
+          <div className="elr-col-full">
             <ExpandingLineMenu />
           </div>
           <div className="elr-col-full">
             <h4 className="example-subheading">Drop Line Menu</h4>
           </div>
-          <div className="elr-col-full example-holder">
+          <div className="elr-col-full">
             <DropLineMenu />
           </div>
         </ExampleSection>

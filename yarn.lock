@@ -2633,6 +2633,13 @@ elr-scss-buttons@^0.0.1:
   dependencies:
     elr-scss-functions "0.1.2"
 
+elr-scss-buttons@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-buttons/-/elr-scss-buttons-0.0.3.tgz#f2493567a81caaa14a7fa3e951fe0dbb40b54b0c"
+  integrity sha512-MLxOLPobeKV6vVugB7zz35Ydom+lGH1ejNSNiHk4gwKYxehsL7RztbXSgtSQOcoGQ3gTwu2pq3duBjvCzmX5qg==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-cards@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/elr-scss-cards/-/elr-scss-cards-0.0.3.tgz#c0b82d35047f70d5768c8da68a93fcc407e06666"

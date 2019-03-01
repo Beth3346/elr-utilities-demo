@@ -1,5 +1,7 @@
 @import '~elr-scss-buttons';
 
+$elr-blue: #1976d2;
+$elr-blue-light: lighten($elr-blue, 20%);
 $red: #f7322f;
 $yellow: #d1cb34;
 $green: #7aba7b;
@@ -18,56 +20,6 @@ $muted-color: $grey;
 
 .elr-button {
   @include elr-button;
-}
-
-.elr-button-danger {
-  background-color: $danger-color;
-  border-color: $danger-color;
-
-  &:hover {
-    background-color: lighten($danger-color, 10%);
-    border-color: lighten($danger-color, 10%);
-  }
-}
-
-.elr-button-warning {
-  background-color: $warning-color;
-  border-color: $warning-color;
-
-  &:hover {
-    background-color: lighten($warning-color, 10%);
-    border-color: lighten($warning-color, 10%);
-  }
-}
-
-.elr-button-success {
-  background-color: $success-color;
-  border-color: $success-color;
-
-  &:hover {
-    background-color: lighten($success-color, 10%);
-    border-color: lighten($success-color, 10%);
-  }
-}
-
-.elr-button-muted {
-  background-color: $muted-color;
-  border-color: $muted-color;
-
-  &:hover {
-    background-color: lighten($muted-color, 10%);
-    border-color: lighten($muted-color, 10%);
-  }
-}
-
-.elr-button-info {
-  background-color: $info-color;
-  border-color: $info-color;
-
-  &:hover {
-    background-color: lighten($info-color, 10%);
-    border-color: lighten($info-color, 10%);
-  }
 }
 
 .elr-button-pill {
@@ -92,9 +44,114 @@ $muted-color: $grey;
 }
 
 .elr-button-icon {
+  @include elr-icon-button;
+}
+
+.elr-button-icon-round {
   @include elr-icon-button(
     $config: (
-      icon-position: 'left'
+      round: true
     )
   );
+}
+
+.elr-button,
+.elr-button-pill,
+.elr-button-icon {
+  &.elr-button-danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+
+    &:hover {
+      background-color: lighten($danger-color, 10%);
+      border-color: lighten($danger-color, 10%);
+    }
+  }
+
+  &.elr-button-warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+
+    &:hover {
+      background-color: lighten($warning-color, 10%);
+      border-color: lighten($warning-color, 10%);
+    }
+  }
+
+  &.elr-button-success {
+    background-color: $success-color;
+    border-color: $success-color;
+
+    &:hover {
+      background-color: lighten($success-color, 10%);
+      border-color: lighten($success-color, 10%);
+    }
+  }
+
+  &.elr-button-muted {
+    background-color: $muted-color;
+    border-color: $muted-color;
+
+    &:hover {
+      background-color: lighten($muted-color, 10%);
+      border-color: lighten($muted-color, 10%);
+    }
+  }
+
+  &.elr-button-info {
+    background-color: $info-color;
+    border-color: $info-color;
+
+    &:hover {
+      background-color: lighten($info-color, 10%);
+      border-color: lighten($info-color, 10%);
+    }
+  }
+}
+
+.elr-button-raised {
+  @include elr-button(
+    $config: (
+      background-color: #1daaf0,
+      border-radius: 5px
+    )
+  );
+  border: 1px solid darken(#1daaf0, 5%);
+  border-bottom: 4px solid darken(#1daaf0, 10%);
+
+  &:hover {
+    border: 1px solid #1daaf0;
+    border-bottom: 4px solid darken(#1daaf0, 5%);
+  }
+}
+
+.elr-button-gradient {
+  color: #fff;
+  padding: 14px 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 200px;
+  border: 0;
+  border-radius: 50px;
+  // background-image: linear-gradient(
+  //   $elr-blue-light,
+  //   $elr-blue,
+  //   $elr-blue-light
+  // );
+  // background-position: left center;
+  background-image: linear-gradient(
+    to right,
+    #84fab0 0%,
+    #8fd3f4 51%,
+    #84fab0 100%
+  );
+  transition: 0.3s;
+  background-size: 200% auto;
+  text-shadow: #aaaaaa 0 0 1px;
+
+  &:hover {
+    border: 0;
+    background-position: right center;
+  }
 }
