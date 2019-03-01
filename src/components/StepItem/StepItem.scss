@@ -1,9 +1,9 @@
 .elr-step-icon {
-  margin-right: 5px;
+  margin-right: 10px;
   position: relative;
-  top: 1px;
-  font-size: 16px;
-  color: #fff;
+  top: 0;
+  font-size: 14px;
+  color: #ed145b;
 }
 
 .elr-step-item {
@@ -21,11 +21,11 @@
   font-size: 14px;
 
   &:nth-child(odd) {
-    background-color: #eee;
+    background-color: #fff;
     color: #ed145b;
 
     &::after {
-      color: #eee;
+      color: #fff;
     }
   }
 
@@ -50,6 +50,10 @@
   &.elr-step-item-current {
     background-color: #ed145b;
     color: #fff;
+
+    .elr-step-icon {
+      color: #fff;
+    }
 
     &::after {
       color: #ed145b;

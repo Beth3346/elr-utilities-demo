@@ -134,17 +134,11 @@ $muted-color: $grey;
   min-width: 200px;
   border: 0;
   border-radius: 50px;
-  // background-image: linear-gradient(
-  //   $elr-blue-light,
-  //   $elr-blue,
-  //   $elr-blue-light
-  // );
-  // background-position: left center;
   background-image: linear-gradient(
     to right,
-    #84fab0 0%,
-    #8fd3f4 51%,
-    #84fab0 100%
+    $elr-blue-light 0%,
+    $elr-blue 51%,
+    $elr-blue-light 100%
   );
   transition: 0.3s;
   background-size: 200% auto;
@@ -153,5 +147,30 @@ $muted-color: $grey;
   &:hover {
     border: 0;
     background-position: right center;
+  }
+}
+
+.elr-button-glass {
+  color: #fff;
+  padding: 14px 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 200px;
+  border: 1px solid $elr-blue-light;
+  border-radius: 50px;
+  background-position: center bottom;
+  background-image: linear-gradient(
+    to top,
+    lighten($elr-blue-light, 5%) 0%,
+    $elr-blue 51%,
+    lighten($elr-blue-light, 5%) 100%
+  );
+  transition: 0.3s;
+  background-size: auto 150%;
+  text-shadow: #aaaaaa 0 0 1px;
+
+  &:hover {
+    background-position: center top;
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, cleanup } from 'react-testing-library';
 import { createMemoryHistory } from 'history';
-import { withRouter } from 'react-router';
-import { Link, Route, Router, Switch } from 'react-router-dom';
+// import { withRouter } from 'react-router';
+import { Router } from 'react-router-dom';
 // this adds custom jest matchers from jest-dom
 import 'jest-dom/extend-expect';
 import App from '@/App';

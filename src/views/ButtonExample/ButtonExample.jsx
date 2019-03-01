@@ -38,6 +38,7 @@ const ButtonExample = () => (
           <ButtonPill>Pill Button</ButtonPill>
           <ButtonPill classes="elr-button-success">Success!</ButtonPill>
           <button className="elr-button-gradient">Gradient</button>
+          <button className="elr-button-glass">Glass Button</button>
         </ExampleSection>
         <ExampleSection
           heading="Ghost Buttons"
