@@ -1,5 +1,7 @@
 .elr-tabs {
   margin-bottom: 2.5rem;
+  position: relative;
+  height: 500px;
 }
 
 .elr-tab-holder {
@@ -17,6 +19,8 @@
 .elr-tab {
   opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
   border: 1px solid #ccc;
   border-radius: 0 5px 5px;
   padding: 20px 30px;

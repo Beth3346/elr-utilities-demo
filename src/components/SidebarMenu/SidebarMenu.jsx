@@ -157,12 +157,12 @@ class SidebarMenu extends Component {
             {
               id: 1,
               name: 'Buttons',
-              url: '/buttons'
+              url: '/button-helpers'
             },
             {
               id: 2,
               name: 'Headings',
-              url: '/headings'
+              url: '/heading-helpers'
             },
             {
               id: 3,
@@ -172,7 +172,7 @@ class SidebarMenu extends Component {
             {
               id: 4,
               name: 'Lists',
-              url: '/lists'
+              url: '/list-helpers'
             },
             {
               id: 5,
@@ -201,6 +201,16 @@ class SidebarMenu extends Component {
           name: 'Elements',
           url: '/',
           subLinks: [
+            {
+              id: 5,
+              name: 'Buttons',
+              url: '/buttons'
+            },
+            {
+              id: 6,
+              name: 'Headings',
+              url: '/headings'
+            },
             {
               id: 1,
               name: 'Images',

@@ -40,7 +40,6 @@ import ImagesExample from '@/views/ImagesExample/ImagesExample';
 import InputGroupsExample from '@/views/InputGroupsExample/InputGroupsExample';
 import InputsExample from '@/views/InputsExample/InputsExample';
 import LayoutUtilitiesExample from '@/views/LayoutUtilitiesExample/LayoutUtilitiesExample';
-import ListsExample from '@/views/ListsExample/ListsExample';
 import MetroGridExample from '@/views/MetroGridExample/MetroGridExample';
 import ModalExample from '@/views/ModalExample/ModalExample';
 import NavigationExample from '@/views/NavigationExample/NavigationExample';
@@ -104,7 +103,6 @@ class App extends Component {
           <Route path="/input-groups" component={InputGroupsExample} />
           <Route path="/inputs" component={InputsExample} />
           <Route path="/layout-utilities" component={LayoutUtilitiesExample} />
-          <Route path="/lists" component={ListsExample} />
           <Route path="/metro-grid" component={MetroGridExample} />
           <Route path="/modals" component={ModalExample} />
           <Route path="/navigation" component={NavigationExample} />

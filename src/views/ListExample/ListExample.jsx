@@ -2,13 +2,14 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
+import './ListExample.scss';
 
 const ListExample = () => (
   <div>
     <Header heading="Lists">Lists Example</Header>
     <ContentMain>
       <section id="lists">
-        <ExampleSection heading="Lists" subheading="some lists">
+        <ExampleSection heading="List" subheading="some lists">
           <ul>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -16,13 +17,45 @@ const ListExample = () => (
             <li>Item 4</li>
           </ul>
         </ExampleSection>
-        <ExampleSection heading="Ordered Lists" subheading="some lists">
+        <ExampleSection heading="Ordered List" subheading="some lists">
           <ol>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ol>
+        </ExampleSection>
+        <ExampleSection heading="Unstyled List" subheading="some lists">
+          <ul className="elr-unstyled-list">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
             <li>Item 4</li>
-          </ol>
+          </ul>
+        </ExampleSection>
+        <ExampleSection heading="Border List" subheading="some lists">
+          <ul className="elr-border-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </ExampleSection>
+        <ExampleSection heading="Inline List" subheading="some lists">
+          <ul className="elr-inline-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </ExampleSection>
+        <ExampleSection heading="Bulleted List" subheading="some lists">
+          <ul className="elr-bullet-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
         </ExampleSection>
       </section>
     </ContentMain>

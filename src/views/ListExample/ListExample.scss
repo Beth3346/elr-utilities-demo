@@ -1,0 +1,145 @@
+@import '~elr-scss-functions';
+
+@mixin elr-list-divider($config: ()) {
+  $config: extend(
+    (
+      border-color: #ccc
+    ),
+    $config
+  );
+
+  $border-color: map-get($config, border-color);
+
+  height: 1px;
+  padding: 0;
+  margin: 5px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+@mixin elr-unstyled-list() {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+@mixin elr-border-list($config: ()) {
+  $config: extend(
+    (
+      border-color: #ccc
+    ),
+    $config
+  );
+
+  $border-color: map-get($config, border-color);
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 5px;
+    border-bottom: 1px solid $border-color;
+    margin: 0;
+    margin-left: 0;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+@mixin elr-inline-list($config: ()) {
+  padding: 0;
+
+  li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  li:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li,
+  a {
+    display: inline-block;
+  }
+}
+
+@mixin elr-bullet-list($config: ()) {
+  $config: extend(
+    (
+      icon: '\2705',
+      icon-font-size: 70%
+    ),
+    $config
+  );
+
+  $icon: map-get($config, icon);
+  $icon-font-size: map-get($config, icon-font-size);
+  padding-left: 0;
+
+  li {
+    margin-left: 0;
+    padding-left: 5px;
+    list-style: none;
+
+    &:before {
+      content: $icon;
+      display: inline;
+      padding-right: 5px;
+      font-size: $icon-font-size;
+      vertical-align: middle;
+    }
+  }
+}
+
+@mixin elr-icon-list($config: ()) {
+  $config: extend(
+    (
+      icon-font-size: 14px
+    ),
+    $config
+  );
+
+  $icon-font-size: map-get($config, icon-font-size);
+
+  margin-left: 0;
+
+  li {
+    margin-left: 0;
+    padding-left: 10px;
+    list-style: none;
+
+    .elr-list-icon {
+      font-size: $icon-font-size;
+    }
+  }
+}
+
+.elr-unstyled-list {
+  @include elr-unstyled-list;
+}
+
+.elr-border-list {
+  @include elr-border-list;
+
+  li {
+    font-size: 14px;
+  }
+}
+
+.elr-inline-list {
+  @include elr-inline-list;
+
+  li {
+    font-size: 14px;
+  }
+}
+
+.elr-bullet-list {
+  @include elr-bullet-list;
+}
