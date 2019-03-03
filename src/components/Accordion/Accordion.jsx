@@ -19,7 +19,7 @@ class Accordion extends Component {
         <AccordionItem
           handleToggle={this.handleToggle}
           index={1}
-          label="Accordion Item Label"
+          label="Accordion Item One"
           status={this.state.current === 1 ? 'show' : 'hide'}
         >
           <p>
@@ -36,7 +36,7 @@ class Accordion extends Component {
         <AccordionItem
           handleToggle={this.handleToggle}
           index={2}
-          label="Accordion Item Label"
+          label="Accordion Item Two"
           status={this.state.current === 2 ? 'show' : 'hide'}
         >
           <p>
@@ -53,7 +53,7 @@ class Accordion extends Component {
         <AccordionItem
           handleToggle={this.handleToggle}
           index={3}
-          label="Accordion Item Label"
+          label="Accordion Item Three"
           status={this.state.current === 3 ? 'show' : 'hide'}
         >
           <p>
@@ -70,7 +70,7 @@ class Accordion extends Component {
         <AccordionItem
           handleToggle={this.handleToggle}
           index={4}
-          label="Accordion Item Label"
+          label="Accordion Item Four"
           status={this.state.current === 4 ? 'show' : 'hide'}
         >
           <p>
@@ -87,7 +87,7 @@ class Accordion extends Component {
         <AccordionItem
           handleToggle={this.handleToggle}
           index={5}
-          label="Accordion Item Label"
+          label="Accordion Item Five"
           status={this.state.current === 5 ? 'show' : 'hide'}
         >
           <p>
