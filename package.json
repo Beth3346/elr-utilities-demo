@@ -26,6 +26,9 @@
     "elr-scss-cards": "^0.0.3",
     "elr-scss-comment": "^0.0.4",
     "elr-scss-grid": "^0.0.3",
+    "elr-scss-headings": "^0.0.1",
+    "elr-scss-helpers": "^0.0.3",
+    "elr-scss-images": "^0.0.1",
     "elr-scss-labels": "^0.0.1",
     "elr-scss-lists": "^0.0.1",
     "elr-scss-reset": "^0.0.3",
@@ -64,7 +67,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "yarn jest",
-    "tdd": "yarn jest --watch"
+    "tdd": "yarn jest --watch --notify"
   },
   "devDependencies": {
     "husky": "^1.3.1",

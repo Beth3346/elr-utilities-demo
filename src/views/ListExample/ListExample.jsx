@@ -58,25 +58,25 @@ const ListExample = () => (
           </ul>
         </ExampleSection>
         <ExampleSection heading="Icon List" subheading="some lists">
-          <ul class="elr-icon-list">
+          <ul className="elr-icon-list">
             <li>
-              <i class="elr-list-icon fas fa-arrow-alt-circle-right" />
+              <i className="elr-list-icon fas fa-arrow-alt-circle-right" />
               Item 1
             </li>
             <li>
-              <i class="elr-list-icon fas fa-arrow-alt-circle-right" />
+              <i className="elr-list-icon fas fa-arrow-alt-circle-right" />
               Item 2
             </li>
             <li>
-              <i class="elr-list-icon fas fa-arrow-alt-circle-right" />
+              <i className="elr-list-icon fas fa-arrow-alt-circle-right" />
               Item 3
             </li>
             <li>
-              <i class="elr-list-icon fas fa-arrow-alt-circle-right" />
+              <i className="elr-list-icon fas fa-arrow-alt-circle-right" />
               Item 4
             </li>
             <li>
-              <i class="elr-list-icon fas fa-arrow-alt-circle-right" />
+              <i className="elr-list-icon fas fa-arrow-alt-circle-right" />
               Item 5
             </li>
           </ul>

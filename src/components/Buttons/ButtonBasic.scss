@@ -14,15 +14,11 @@ $success-color: $green;
 $info-color: $blue;
 $muted-color: $grey;
 
-#buttons button {
-  margin: 5px;
-}
-
-.elr-button {
+.button {
   @include elr-button;
 }
 
-.elr-button-pill {
+.button-pill {
   @include elr-button(
     $config: (
       pill: true
@@ -30,7 +26,7 @@ $muted-color: $grey;
   );
 }
 
-.elr-button-ghost {
+.button-ghost {
   @include elr-button(
     $config: (
       border-color: #1976d2,
@@ -39,15 +35,18 @@ $muted-color: $grey;
   );
 }
 
-.elr-button-group {
+.button-group {
   @include elr-button-group;
 }
 
-.elr-button-icon {
+.button-icon {
   @include elr-icon-button;
+  display: inline-flex;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.elr-button-icon-round {
+.button-icon-round {
   @include elr-icon-button(
     $config: (
       round: true
@@ -55,10 +54,10 @@ $muted-color: $grey;
   );
 }
 
-.elr-button,
-.elr-button-pill,
-.elr-button-icon {
-  &.elr-button-danger {
+.button,
+.button-pill,
+.button-icon {
+  &.button-danger {
     background-color: $danger-color;
     border-color: $danger-color;
 
@@ -68,7 +67,7 @@ $muted-color: $grey;
     }
   }
 
-  &.elr-button-warning {
+  &.button-warning {
     background-color: $warning-color;
     border-color: $warning-color;
 
@@ -78,7 +77,7 @@ $muted-color: $grey;
     }
   }
 
-  &.elr-button-success {
+  &.button-success {
     background-color: $success-color;
     border-color: $success-color;
 
@@ -88,7 +87,7 @@ $muted-color: $grey;
     }
   }
 
-  &.elr-button-muted {
+  &.button-muted {
     background-color: $muted-color;
     border-color: $muted-color;
 
@@ -98,7 +97,7 @@ $muted-color: $grey;
     }
   }
 
-  &.elr-button-info {
+  &.button-info {
     background-color: $info-color;
     border-color: $info-color;
 
@@ -109,7 +108,7 @@ $muted-color: $grey;
   }
 }
 
-.elr-button-raised {
+.button-raised {
   @include elr-button(
     $config: (
       background-color: #1daaf0,
@@ -125,7 +124,7 @@ $muted-color: $grey;
   }
 }
 
-.elr-button-gradient {
+.button-gradient {
   color: #fff;
   padding: 14px 20px;
   display: inline-block;
@@ -150,7 +149,7 @@ $muted-color: $grey;
   }
 }
 
-.elr-button-glass {
+.button-glass {
   color: #fff;
   padding: 14px 20px;
   display: inline-block;

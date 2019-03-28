@@ -1,24 +1,30 @@
 import React from 'react';
+import AccordionLabel from './AccordionLabel';
+import AccordionContent from './AccordionContent';
+import PropTypes from 'prop-types';
 
-const AccordionItem = ({ label, status, children, handleToggle, index }) => {
+const AccordionItem = ({ label, status, children, handleToggle, id }) => {
   return (
     <div className="accordion-item">
-      <h2
-        data-testid={`accordion-label-${index}`}
-        onClick={() => handleToggle(index)}
-        className={`elr-accordion-label ${status === 'show' && 'active'}`}
-      >
-        <i className="elr-accordion-icon fa fa-angle-down" />
-        {label}
-      </h2>
-      <div
-        data-testid={`accordion-content-${index}`}
-        className={`elr-accordion-content ${status === 'show' && 'active'}`}
-      >
+      <AccordionLabel
+        label={label}
+        status={status}
+        handleToggle={handleToggle}
+        id={id}
+      />
+      <AccordionContent status={status} id={id}>
         {children}
-      </div>
+      </AccordionContent>
     </div>
   );
+};
+
+AccordionItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  status: PropTypes.oneOf(['show', 'hide']).isRequired,
+  children: PropTypes.element.isRequired,
+  handleToggle: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired
 };
 
 export default AccordionItem;

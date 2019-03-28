@@ -2713,6 +2713,30 @@ elr-scss-grid@^0.0.3:
   dependencies:
     elr-scss-functions "0.1.2"
 
+elr-scss-headings@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elr-scss-headings/-/elr-scss-headings-0.0.1.tgz#b6865499c1fb94fc9b7bebf61e9dd0d9e5ce48c5"
+  integrity sha512-tW2x2perlVhEnNWU5KpzeuY8hYbo/QM0i0Tv/SNiY5bVONKTwY255QJmQMBxdkzJfvT/o0nWxDLs3cJ7ItmRwA==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
+elr-scss-helpers@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elr-scss-helpers/-/elr-scss-helpers-0.0.3.tgz#5fc08e57ea343ad3c2db8bbd1e5e2fe0a8632b3e"
+  integrity sha512-YE9RYbR00qv52hMZAs8WLQR7XGqfNyrV6JW3YpnVLFMHimdmRfFdREKEDV7VviLnrxZ9kH+lKvJy9aKBDwsoFw==
+  dependencies:
+    elr-scss-alerts "^0.1.4"
+    elr-scss-buttons "^0.0.3"
+    elr-scss-functions "0.1.2"
+    elr-scss-lists "^0.0.1"
+
+elr-scss-images@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elr-scss-images/-/elr-scss-images-0.0.1.tgz#a5686c6f01e3530a7d740721c4bdda51eabaded2"
+  integrity sha512-A4gaiHq4V7eC2XPPNwKw+GiPuf9WgZil4Uu34RIGy0Na1WM7pZFlJTlzH552QMTd+RmKbAGsZDacRHEV0LAxLg==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-labels@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/elr-scss-labels/-/elr-scss-labels-0.0.1.tgz#34699e691e85f44f19e13017903fc3ff3d1f424e"

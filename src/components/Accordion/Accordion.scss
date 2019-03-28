@@ -4,6 +4,15 @@
   @include elr-accordion;
   max-width: 600px;
   margin: 20px 0;
+
+  .elr-accordion-label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .elr-accordion-icon {
+    top: 13px;
+  }
 }
 
 .elr-accordion-content p {

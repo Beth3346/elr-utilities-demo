@@ -57,6 +57,7 @@ import VideosExample from '@/views/VideosExample/VideosExample';
 import SpinExample from '@/views/SpinExample/SpinExample';
 import TabsExample from '@/views/TabsExample/TabsExample';
 import LightboxExample from '@/views/LightboxExample/LightboxExample';
+import ButtonHelpersExample from '@/views/ButtonHelpersExample/ButtonHelpersExample';
 
 class App extends Component {
   render() {
@@ -120,6 +121,7 @@ class App extends Component {
           <Route path="/spin" component={SpinExample} />
           <Route path="/tabs" component={TabsExample} />
           <Route path="/lightbox" component={LightboxExample} />
+          <Route path="/button-helpers" component={ButtonHelpersExample} />
         </Switch>
       </div>
     );

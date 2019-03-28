@@ -1,10 +1,13 @@
 @import '~elr-scss-reset';
 @import '~elr-scss-base';
 @import '~elr-scss-grid';
+@import '~elr-scss-helpers';
 
 @include elr-reset();
 @include elr-base();
 @include elr-grid;
+@include elr-helper-classes;
+@include elr-action-helper-classes;
 
 body {
   line-height: 1.3em;
