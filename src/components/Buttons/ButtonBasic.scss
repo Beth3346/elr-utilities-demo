@@ -1,4 +1,4 @@
-@import '~elr-scss-buttons';
+// @import '~elr-scss-buttons';
 
 $elr-blue: #1976d2;
 $elr-blue-light: lighten($elr-blue, 20%);
@@ -14,125 +14,21 @@ $success-color: $green;
 $info-color: $blue;
 $muted-color: $grey;
 
-.button {
-  @include elr-button;
-}
-
-.button-pill {
-  @include elr-button(
-    $config: (
-      pill: true
-    )
-  );
-}
-
-.button-ghost {
-  @include elr-button(
-    $config: (
-      border-color: #1976d2,
-      background-color: transparent
-    )
-  );
-}
-
-.button-group {
-  @include elr-button-group;
-}
-
-.button-icon {
-  @include elr-icon-button;
-  display: inline-flex;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.button-icon-round {
-  @include elr-icon-button(
-    $config: (
-      round: true
-    )
-  );
-}
-
-.button,
-.button-pill,
-.button-icon {
-  &.button-danger {
-    background-color: $danger-color;
-    border-color: $danger-color;
-
-    &:hover {
-      background-color: lighten($danger-color, 10%);
-      border-color: lighten($danger-color, 10%);
-    }
-  }
-
-  &.button-warning {
-    background-color: $warning-color;
-    border-color: $warning-color;
-
-    &:hover {
-      background-color: lighten($warning-color, 10%);
-      border-color: lighten($warning-color, 10%);
-    }
-  }
-
-  &.button-success {
-    background-color: $success-color;
-    border-color: $success-color;
-
-    &:hover {
-      background-color: lighten($success-color, 10%);
-      border-color: lighten($success-color, 10%);
-    }
-  }
-
-  &.button-muted {
-    background-color: $muted-color;
-    border-color: $muted-color;
-
-    &:hover {
-      background-color: lighten($muted-color, 10%);
-      border-color: lighten($muted-color, 10%);
-    }
-  }
-
-  &.button-info {
-    background-color: $info-color;
-    border-color: $info-color;
-
-    &:hover {
-      background-color: lighten($info-color, 10%);
-      border-color: lighten($info-color, 10%);
-    }
-  }
-}
-
-.button-raised {
-  @include elr-button(
-    $config: (
-      background-color: #1daaf0,
-      border-radius: 5px
-    )
-  );
+.elr-button-raised {
+  background-color: darken(#1daaf0, 5%);
   border: 1px solid darken(#1daaf0, 5%);
   border-bottom: 4px solid darken(#1daaf0, 10%);
 
   &:hover {
+    background-color: #1daaf0;
     border: 1px solid #1daaf0;
     border-bottom: 4px solid darken(#1daaf0, 5%);
   }
 }
 
-.button-gradient {
+.elr-button-gradient {
   color: #fff;
-  padding: 14px 20px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  min-width: 200px;
   border: 0;
-  border-radius: 50px;
   background-image: linear-gradient(
     to right,
     $elr-blue-light 0%,
@@ -141,7 +37,7 @@ $muted-color: $grey;
   );
   transition: 0.3s;
   background-size: 200% auto;
-  text-shadow: #aaaaaa 0 0 1px;
+  text-shadow: #aaa 0 0 1px;
 
   &:hover {
     border: 0;
@@ -149,15 +45,9 @@ $muted-color: $grey;
   }
 }
 
-.button-glass {
+.elr-button-glass {
   color: #fff;
-  padding: 14px 20px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  min-width: 200px;
   border: 1px solid $elr-blue-light;
-  border-radius: 50px;
   background-position: center bottom;
   background-image: linear-gradient(
     to top,
@@ -170,6 +60,7 @@ $muted-color: $grey;
   text-shadow: #aaaaaa 0 0 1px;
 
   &:hover {
+    border: 1px solid $elr-blue-light;
     background-position: center top;
   }
 }

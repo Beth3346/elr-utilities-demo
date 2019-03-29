@@ -19,12 +19,15 @@
     text-align: center;
     display: flex;
     align-items: center;
-    color: #fff;
   }
 
   .box p {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
   }
 
   .elr-fade-in,

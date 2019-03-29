@@ -2681,6 +2681,13 @@ elr-scss-buttons@^0.0.3:
   dependencies:
     elr-scss-functions "0.1.2"
 
+elr-scss-buttons@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/elr-scss-buttons/-/elr-scss-buttons-0.0.4.tgz#1b33492a366891ee91f047c5fd6a94da1725293b"
+  integrity sha512-lVq5q34cTNPlEInW/k5wRQG1oByIklzyYWlrArEoipuWgtedGapy8sM58kK5XPqrUZM8KcutPPBOSZPG4xR+Yw==
+  dependencies:
+    elr-scss-functions "0.1.2"
+
 elr-scss-cards@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/elr-scss-cards/-/elr-scss-cards-0.0.3.tgz#c0b82d35047f70d5768c8da68a93fcc407e06666"
@@ -2720,13 +2727,13 @@ elr-scss-headings@^0.0.1:
   dependencies:
     elr-scss-functions "0.1.2"
 
-elr-scss-helpers@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/elr-scss-helpers/-/elr-scss-helpers-0.0.3.tgz#5fc08e57ea343ad3c2db8bbd1e5e2fe0a8632b3e"
-  integrity sha512-YE9RYbR00qv52hMZAs8WLQR7XGqfNyrV6JW3YpnVLFMHimdmRfFdREKEDV7VviLnrxZ9kH+lKvJy9aKBDwsoFw==
+elr-scss-helpers@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/elr-scss-helpers/-/elr-scss-helpers-0.0.5.tgz#7284c679a3dd23190e808d6ff50d6910e7b80cac"
+  integrity sha512-2inYQoDVsk5iTtb0Oqu4MB6JtlW58GDVa1LKhQagInUIeWdQdIQDr9dX0Ek/Oy+GoY6Kfb8s3cnHl6XJ7zflAQ==
   dependencies:
     elr-scss-alerts "^0.1.4"
-    elr-scss-buttons "^0.0.3"
+    elr-scss-buttons "^0.0.4"
     elr-scss-functions "0.1.2"
     elr-scss-lists "^0.0.1"
 
