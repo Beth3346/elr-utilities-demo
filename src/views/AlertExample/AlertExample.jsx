@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
-import Alert from '../../components/Alert/Alert';
+import Alert from '@/components/Alert/Alert';
 
 class AlertExample extends Component {
   state = {
@@ -24,7 +24,14 @@ class AlertExample extends Component {
               >
                 Launch Alert
               </button>
-              <Alert handleAlert={this.handleAlert} show={this.state.show} />
+              <Alert
+                title="An Alert"
+                handleAlert={this.handleAlert}
+                show={this.state.show}
+                buttonText="Close"
+              >
+                <p>This is some content</p>
+              </Alert>
             </ExampleSection>
           </section>
         </ContentMain>
