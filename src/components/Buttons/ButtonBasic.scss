@@ -1,28 +1,62 @@
 // @import '~elr-scss-buttons';
+@import '../../config';
 
-$elr-blue: #1976d2;
-$elr-blue-light: lighten($elr-blue, 20%);
-$red: #f7322f;
-$yellow: #d1cb34;
-$green: #7aba7b;
-$blue: #1daaf0;
-$grey: #999;
+.elr-button-icon {
+  .icon {
+    padding-left: 15px;
+    padding-right: 15px;
 
-$danger-color: $red;
-$warning-color: $yellow;
-$success-color: $green;
-$info-color: $blue;
-$muted-color: $grey;
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .elr-button-text {
+    margin-left: -15px;
+  }
+}
+
+.elr-button-icon-square {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  .icon {
+    padding-left: 0;
+    padding-right: 0;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.elr-button-icon-round {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  .icon {
+    padding-left: 0;
+    padding-right: 0;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
 
 .elr-button-raised {
-  background-color: darken(#1daaf0, 5%);
-  border: 1px solid darken(#1daaf0, 5%);
-  border-bottom: 4px solid darken(#1daaf0, 10%);
+  background-color: darken($primary-color, 5%);
+  border: 1px solid darken($primary-color, 5%);
+  border-bottom: 4px solid darken($primary-color, 10%);
 
   &:hover {
-    background-color: #1daaf0;
-    border: 1px solid #1daaf0;
-    border-bottom: 4px solid darken(#1daaf0, 5%);
+    background-color: $primary-color;
+    border: 1px solid hsl(200, 88%, 53%);
+    border-bottom: 4px solid darken($primary-color, 5%);
   }
 }
 
@@ -31,9 +65,9 @@ $muted-color: $grey;
   border: 0;
   background-image: linear-gradient(
     to right,
-    $elr-blue-light 0%,
-    $elr-blue 51%,
-    $elr-blue-light 100%
+    $secondary-color 0%,
+    $primary-color 51%,
+    $secondary-color 100%
   );
   transition: 0.3s;
   background-size: 200% auto;
@@ -47,20 +81,21 @@ $muted-color: $grey;
 
 .elr-button-glass {
   color: #fff;
-  border: 1px solid $elr-blue-light;
+  border: 1px solid lighten($primary-color, 20%);
   background-position: center bottom;
   background-image: linear-gradient(
     to top,
-    lighten($elr-blue-light, 5%) 0%,
-    $elr-blue 51%,
-    lighten($elr-blue-light, 5%) 100%
+    lighten(lighten($primary-color, 20%), 5%) 0%,
+    $primary-color 51%,
+    $primary-color 61%,
+    lighten(lighten($primary-color, 20%), 5%) 100%
   );
   transition: 0.3s;
   background-size: auto 150%;
   text-shadow: #aaaaaa 0 0 1px;
 
   &:hover {
-    border: 1px solid $elr-blue-light;
+    border: 1px solid lighten($primary-color, 20%);
     background-position: center top;
   }
 }

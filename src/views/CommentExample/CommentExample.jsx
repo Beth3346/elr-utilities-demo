@@ -13,9 +13,35 @@ const comments = [
     id: 1,
     avatar: cat,
     author: 'Annie Edison',
-    body: 'This articles is so interesting!',
+    body: 'This article is so interesting!',
     timestamp: '10 minutes ago',
-    replies: []
+    replies: [
+      {
+        id: 4,
+        avatar: cat1,
+        author: 'Jeff Winger',
+        body: 'This is a reply',
+        timestamp: '30 minutes ago',
+        replies: [
+          {
+            id: 6,
+            avatar: cat,
+            author: 'Annie Edison',
+            body: 'I totally agree Jeff!',
+            timestamp: '45 minutes ago',
+            replies: []
+          }
+        ]
+      },
+      {
+        id: 5,
+        avatar: cat1,
+        author: 'Jeff Winger',
+        body: 'This is another reply',
+        timestamp: '30 minutes ago',
+        replies: []
+      }
+    ]
   },
   {
     id: 2,
@@ -44,13 +70,7 @@ const CommentExample = () => (
         <ExampleSection heading="Comments" subheading="">
           <div className="comments">
             {comments.map(comment => (
-              <Comment
-                key={comment.id}
-                avatar={comment.avatar}
-                author={comment.author}
-                body={comment.body}
-                timestamp={comment.timestamp}
-              />
+              <Comment key={comment.id} comment={comment} />
             ))}
           </div>
         </ExampleSection>

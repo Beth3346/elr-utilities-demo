@@ -3,16 +3,6 @@ import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
 import ButtonBasic from '@/components/Buttons/ButtonBasic';
-// import ButtonSuccess from '@/components/Buttons/ButtonSuccess';
-// import ButtonDanger from '@/components/Buttons/ButtonDanger';
-// import ButtonWarning from '@/components/Buttons/ButtonWarning';
-// import ButtonInfo from '@/components/Buttons/ButtonInfo';
-// import ButtonMuted from '@/components/Buttons/ButtonMuted';
-// import ButtonIcon from '@/components/Buttons/ButtonIcon';
-// import ButtonGhost from '@/components/Buttons/ButtonGhost';
-// import ButtonPill from '@/components/Buttons/ButtonPill';
-// import ButtonIconRound from '@/components/Buttons/ButtonIconRound';
-// import ButtonRaised from '@/components/Buttons/ButtonRaised';
 import './ButtonExample.scss';
 
 const ButtonExample = () => (
@@ -129,17 +119,37 @@ const ButtonExample = () => (
           heading="Icon Buttons"
           subheading="Use context buttons when you need to assign a special meaning to a button."
         >
-          {/* <ButtonIcon icon={<i className="fas fa-cat" />}>
-            <span className="elr-button-text">Icon Button</span>
-          </ButtonIcon>
-          <ButtonIcon
-            classes="elr-button-info"
+          <ButtonBasic
+            handleClick={() => alert('info clicked')}
             icon={<i className="fas fa-cat" />}
+            classes="elr-button-icon"
           >
             <span className="elr-button-text">Icon Button</span>
-          </ButtonIcon>
-          <ButtonIcon icon={<i className="fas fa-cat" />} />
-          <ButtonIconRound icon={<i className="fas fa-cat" />} /> */}
+          </ButtonBasic>
+          <ButtonBasic
+            handleClick={() => alert('info clicked')}
+            icon={<i className="fas fa-cat" />}
+            classes="elr-button-icon elr-button-info"
+          >
+            <span className="elr-button-text">Icon Button</span>
+          </ButtonBasic>
+          <ButtonBasic
+            handleClick={() => alert('info clicked')}
+            icon={<i className="fas fa-cat" />}
+            classes="elr-button-icon elr-button-ghost elr-button-pill elr-button-primary"
+          >
+            <span className="elr-button-text">Icon Button</span>
+          </ButtonBasic>
+          <ButtonBasic
+            handleClick={() => alert('info clicked')}
+            classes="elr-button-icon elr-button-icon-square"
+            icon={<i className="fas fa-cat" />}
+          />
+          <ButtonBasic
+            handleClick={() => alert('info clicked')}
+            classes="elr-button-icon elr-button-icon-round"
+            icon={<i className="fas fa-cat" />}
+          />
         </ExampleSection>
       </section>
     </ContentMain>

@@ -14,87 +14,40 @@
   margin-bottom: 18px;
 }
 
-// .elr-comment {
-//   width: 100%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-bottom: 18px;
-// }
+.elr-comment-content {
+  width: 100%;
+}
 
-// .elr-comment-body {
-//   p {
-//     font-size: 14px;
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
+.elr-comment-reply-form {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
 
-// .elr-comment-nested {
-//   padding-left: 1.875rem;
-//   padding-top: 10px;
-//   padding-bottom: 0;
-//   margin-bottom: 0;
-// }
+  .elr-comment-form-heading {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-// .elr-avatar {
-//   overflow: hidden;
-//   border: 2px solid #fff;
-//   box-shadow: #ccc 0 0 0 1px;
-//   width: 50px;
-//   height: 50px;
-//   display: block;
-//   border-radius: 3px;
-//   margin-right: 10px;
+  input,
+  textarea,
+  label {
+    width: 100%;
+    display: block;
+  }
 
-//   img {
-//     height: 100%;
-//     width: auto;
-//   }
-// }
+  input,
+  textarea {
+    border-radius: 3px;
+    margin: 10px 0;
+  }
+}
 
-// .elr-comment-content {
-//   max-width: 36.875rem;
-// }
-
-// .elr-comment-heading {
-//   padding-bottom: 5px;
-//   margin: 0;
-//   display: flex;
-//   align-items: baseline;
-// }
-
-// .elr-comment-author {
-//   font-size: 16px;
-//   font-weight: 700;
-//   color: #333;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .elr-comment-timestamp {
-//   font-size: 12px;
-//   font-weight: 500;
-//   color: #666;
-//   padding: 0;
-//   margin: 0 0 0 10px;
-// }
-
-// .elr-comment-reply {
-//   font-size: 14px;
-//   text-decoration: none;
-//   color: #1976d2;
-// }
-
-// .elr-comment-reply-form {
-//   width: 100%;
-
-//   [type='submit'] {
-//     background-color: #1976d2;
-//     border: 1px solid #1976d2;
-
-//     &:hover {
-//       background-color: #378fe7;
-//       border-color: #378fe7;
-//     }
-//   }
-// }
+.elr-comment-replies {
+  padding: 20px;
+  width: 100%;
+}
