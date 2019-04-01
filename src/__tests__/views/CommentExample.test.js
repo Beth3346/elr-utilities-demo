@@ -1,10 +1,11 @@
 import React from 'react';
 import { render, cleanup } from 'react-testing-library';
 import { createMemoryHistory } from 'history';
+// import { withRouter } from 'react-router';
 import { Router } from 'react-router-dom';
 // this adds custom jest matchers from jest-dom
 import 'jest-dom/extend-expect';
-import AboutPage from '@/views/AboutPage/AboutPage';
+import CommentExample from '@/views/CommentExample/CommentExample';
 
 afterEach(cleanup);
 function renderWithRouter(
@@ -20,9 +21,9 @@ function renderWithRouter(
   };
 }
 
-describe('About Page', () => {
-  it('should display about page', () => {
-    const { container } = renderWithRouter(<AboutPage />);
-    expect(container.innerHTML).toMatch('About ELR Utilities');
+describe('CommentExample', () => {
+  it('should display comment page', () => {
+    const { container } = renderWithRouter(<CommentExample />);
+    expect(container.innerHTML).toMatch('Comments');
   });
 });

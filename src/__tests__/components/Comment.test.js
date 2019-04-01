@@ -13,7 +13,7 @@ describe('Comment', () => {
       author: 'Jeff Winger',
       body: 'This is a reply',
       timestamp: '30 minutes ago',
-      replies: []
+      comments: []
     },
     {
       id: 5,
@@ -21,7 +21,7 @@ describe('Comment', () => {
       author: 'Jeff Winger',
       body: 'This is another reply',
       timestamp: '30 minutes ago',
-      replies: []
+      comments: []
     }
   ];
   const comp = render(
@@ -32,7 +32,7 @@ describe('Comment', () => {
         author: 'Jeff Winger',
         body: 'This site always has such good articles',
         timestamp: '30 minutes ago',
-        replies: []
+        comments: []
       }}
     />
   );
@@ -71,7 +71,7 @@ describe('Comment', () => {
           author: 'Jeff Winger',
           body: 'This site always has such good articles',
           timestamp: '30 minutes ago',
-          replies
+          comments: replies
         }}
       />
     );
@@ -86,21 +86,21 @@ describe('Comment', () => {
         author: 'Jeff Winger',
         body: 'This is a reply',
         timestamp: '30 minutes ago',
-        replies: [
+        comments: [
           {
             id: 6,
             avatar: cat1,
             author: 'Annie Edison',
             body: 'I totally agree Jeff!',
             timestamp: '45 minutes ago',
-            replies: [
+            comments: [
               {
                 id: 9,
                 avatar: cat1,
                 author: 'Annie Edison',
                 body: 'Another nested reply!',
                 timestamp: '45 minutes ago',
-                replies: []
+                comments: []
               },
               {
                 id: 10,
@@ -108,7 +108,7 @@ describe('Comment', () => {
                 author: 'Annie Edison',
                 body: 'Yet another nested reply!',
                 timestamp: '45 minutes ago',
-                replies: []
+                comments: []
               }
             ]
           },
@@ -118,7 +118,7 @@ describe('Comment', () => {
             author: 'Annie Edison',
             body: 'I really totally agree Jeff!',
             timestamp: '45 minutes ago',
-            replies: []
+            comments: []
           }
         ]
       },
@@ -128,14 +128,14 @@ describe('Comment', () => {
         author: 'Jeff Winger',
         body: 'This is another reply',
         timestamp: '30 minutes ago',
-        replies: [
+        comments: [
           {
             id: 8,
             avatar: cat1,
             author: 'Annie Edison',
             body: 'Another reply!',
             timestamp: '45 minutes ago',
-            replies: []
+            comments: []
           }
         ]
       }
@@ -148,7 +148,7 @@ describe('Comment', () => {
           author: 'Jeff Winger',
           body: 'This site always has such good articles',
           timestamp: '30 minutes ago',
-          replies: nestedReplies
+          comments: nestedReplies
         }}
       />
     );
@@ -159,4 +159,5 @@ describe('Comment', () => {
     getByText(container, 'Yet another nested reply!');
     getByText(container, 'I really totally agree Jeff!');
   });
+  it('should add a reply', () => {});
 });

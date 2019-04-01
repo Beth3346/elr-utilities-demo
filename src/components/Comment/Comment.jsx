@@ -3,11 +3,13 @@ import ReplyForm from './ReplyForm';
 import './Comment.scss';
 import PropTypes from 'prop-types';
 
-const Comment = ({ comment }) => {
-  const addReply = () => {};
+const Comment = ({ comment, updateComments }) => {
+  const addReply = newReply => {
+    updateComments(newReply, comment.id);
+  };
 
   const renderComment = comment => {
-    const { id, avatar, author, timestamp, body, replies } = comment;
+    const { id, avatar, author, timestamp, body, comments: replies } = comment;
     const [showForm, setShowForm] = useState(false);
     const toggleForm = () => setShowForm(!showForm);
 
@@ -28,12 +30,12 @@ const Comment = ({ comment }) => {
             </button>
           </div>
         </div>
-        {showForm && <ReplyForm handleSubmit={addReply} />}
-        {replies && replies.length > 0 && (
-          <div className="elr-comment-replies">
-            {replies.map(reply => renderComment(reply))}
-          </div>
-        )}
+        {showForm && <ReplyForm handleSubmit={reply => addReply(reply)} />}
+        <div className="elr-comment-replies">
+          {replies.map(reply => (
+            <Comment key={reply.id} comment={reply} />
+          ))}
+        </div>
       </div>
     );
   };
@@ -48,15 +50,7 @@ Comment.propTypes = {
     author: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
     timestamp: PropTypes.string.isRequired,
-    replies: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        avatar: PropTypes.string.isRequired,
-        author: PropTypes.string.isRequired,
-        body: PropTypes.string.isRequired,
-        timestamp: PropTypes.string.isRequired
-      })
-    ).isRequired
+    comments: PropTypes.array.isRequired
   }).isRequired
 };
 
