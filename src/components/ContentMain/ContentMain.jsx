@@ -3,7 +3,7 @@ import SidebarMain from '@/components/SidebarMain/SidebarMain';
 import './ContentMain.scss';
 
 const ContentMain = ({ children }) => (
-  <main className="main-content">
+  <main className="main-content" data-testid="main-content">
     <SidebarMain />
     <article className="content-holder">
       <section className="content">{children}</section>

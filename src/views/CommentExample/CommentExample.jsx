@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '@/components/Header/Header';
 import ContentMain from '@/components/ContentMain/ContentMain';
 import ExampleSection from '@/components/ExampleSection/ExampleSection';
-import Comment from '@/components/Comment/Comment';
+import CommentList from '@/components/CommentList/CommentList';
 import './CommentExample.css';
 import cat from '@/assets/images/cat5.jpg';
 import cat1 from '@/assets/images/cat1.jpg';
@@ -63,43 +63,13 @@ const initialComments = [
 ];
 
 const CommentExample = () => {
-  const [comments, setComments] = useState(initialComments);
-  const updateComments = (newReply, id) => {
-    // find comment by id
-    // add reply to reply array
-    const newComments = [...comments];
-    const current = newComments.find(comment => {
-      return comment.id === id;
-    });
-    const newId = 7;
-
-    current.comments.push({
-      id: newId,
-      author: 'Author',
-      avatar: cat,
-      timestamp: 'Just Now',
-      body: newReply,
-      comments: []
-    });
-
-    setComments(newComments);
-  };
-
   return (
     <div>
       <Header heading="Comments">Comments Example</Header>
       <ContentMain>
         <section id="comments">
-          <ExampleSection heading="Comments" subheading="">
-            <div className="comments">
-              {comments.map(comment => (
-                <Comment
-                  key={comment.id}
-                  comment={comment}
-                  updateComments={updateComments}
-                />
-              ))}
-            </div>
+          <ExampleSection heading="Comment List" subheading="">
+            <CommentList initialComments={initialComments} />
           </ExampleSection>
         </section>
       </ContentMain>

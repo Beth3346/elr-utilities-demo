@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, cleanup } from 'react-testing-library';
+import { getByText, getByTestId } from 'dom-testing-library';
+import { render, cleanup, wait } from 'react-testing-library';
 import { createMemoryHistory } from 'history';
 // import { withRouter } from 'react-router';
 import { Router } from 'react-router-dom';
@@ -24,6 +25,14 @@ function renderWithRouter(
 describe('CommentExample', () => {
   it('should display comment page', () => {
     const { container } = renderWithRouter(<CommentExample />);
-    expect(container.innerHTML).toMatch('Comments');
+    getByText(container, 'Comments', { selector: 'h1' });
+    getByText(container, 'Comments Example', { selector: 'p' });
+  });
+  it('should display comments', () => {
+    const { container } = renderWithRouter(<CommentExample />);
+
+    const main = getByTestId(container, 'main-content');
+    getByText(main, 'This article is so interesting!');
+    getByText(main, 'This is another reply');
   });
 });

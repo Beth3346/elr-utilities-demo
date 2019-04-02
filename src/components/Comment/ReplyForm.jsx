@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ReplyForm.scss';
 
 const ReplyForm = ({ handleSubmit }) => {
   const [reply, setReply] = useState('Hello');
@@ -14,8 +15,6 @@ const ReplyForm = ({ handleSubmit }) => {
       }}
       className="elr-comment-reply-form"
     >
-      <h4 className="elr-comment-form-heading">Post a Reply</h4>
-      <p>{reply}</p>
       <div className="elr-form-input-group">
         <label htmlFor="reply-body">Comment:</label>
         <textarea

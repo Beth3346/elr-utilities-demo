@@ -1,7 +1,7 @@
 @import '~elr-scss-comment';
 
 .comments {
-  max-width: 500px;
+  // max-width: 500px;
   @include elr-comments;
 }
 
@@ -14,40 +14,16 @@
   margin-bottom: 18px;
 }
 
-.elr-comment-content {
-  width: 100%;
+.elr-comment {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.elr-comment-reply-form {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-
-  .elr-comment-form-heading {
-    padding: 10px 0;
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  input,
-  textarea,
-  label {
-    width: 100%;
-    display: block;
-  }
-
-  input,
-  textarea {
-    border-radius: 3px;
-    margin: 10px 0;
-  }
+.elr-comment-content {
+  max-width: none;
 }
 
 .elr-comment-replies {
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
 }
