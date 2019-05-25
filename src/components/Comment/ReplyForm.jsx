@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './ReplyForm.scss';
 
-const ReplyForm = ({ handleSubmit }) => {
-  const [reply, setReply] = useState('Hello');
+const ReplyForm = ({ handleSubmit, comment }) => {
+  const [reply, setReply] = useState();
   const handleChange = event => {
-    setReply(event.target.value);
+    setReply({ body: event.target.value, id: comment.id });
   };
 
   return (
@@ -24,6 +24,7 @@ const ReplyForm = ({ handleSubmit }) => {
           cols="30"
           rows="5"
           value={reply}
+          placeholder="Add a reply"
         />
       </div>
       <button className="elr-button elr-button-info" type="submit">

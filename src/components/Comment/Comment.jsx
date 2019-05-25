@@ -30,7 +30,12 @@ const Comment = ({ comment, updateComments }) => {
             </button>
           </div>
         </div>
-        {showForm && <ReplyForm handleSubmit={reply => addReply(reply)} />}
+        {showForm && (
+          <ReplyForm
+            handleSubmit={reply => addReply(reply)}
+            comment={comment}
+          />
+        )}
         <div className="elr-comment-replies">
           {replies.map(reply => (
             <Comment key={reply.id} comment={reply} />
